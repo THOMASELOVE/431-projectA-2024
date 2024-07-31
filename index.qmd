@@ -14,7 +14,7 @@ knitr::opts_chunk$set(comment = NA)
     - You'll need to complete six data management tasks. Start this in **early September**.
 - The [Plan page](plan.qmd) describes the elements of the Project A Plan, which you will submit in late September, according to the deadline on the [Course Calendar](https://thomaselove.github.io/431-2024/calendar.html). 
     - You will build your Project A Plan in **the first three weeks of September**.
-- The [Analyses page](analyses.qmd) contains information on the analyses you'll include in your final submission after we accept your Project A Plan.
+- The [Analyses page](analyses.qmd) contains information on the analyses you'll include in your final submission **after** we accept your Project A Plan.
 - The [Portfolio page](portfolio.qmd) describes the elements of the final Project A submission, which includes the final report, the presentation and the self-evaluation. This page also provides submission instructions.
     - You will build these items in **October**. 
 - The [Examples page](examples.qmd) provides templates for the Project A Plan and for the Final Portfolio Report, and examples we've developed to help you produce what we're looking for in Project A.

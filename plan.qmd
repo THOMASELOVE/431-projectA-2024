@@ -16,7 +16,7 @@ You will develop and send to us (through Canvas):
 2. a Quarto (.qmd) file containing your data management work, and the other elements required in the Project A Plan, and
 3. the HTML result of rendering your Quarto file.
 
-The deadline for the Project A Plan is on the [Course Calendar](https://thomaselove.github.io/431-2024/calendar.html)
+The deadline for the Project A Plan is found on the [Course Calendar](https://thomaselove.github.io/431-2024/calendar.html)
 
 ::: {.callout-note}
 
@@ -110,11 +110,17 @@ You will show that your **chr_2024** tibble is in fact a tibble and not just a d
 
 ## Section 10. Numerical Summaries
 
-You will display the results of `describe_distribution()` from the `datawizard` package (from the `easystats` meta-package), run on the entire tibble. 
+You will do two things here.
 
-- For all variables, we need to see minimum and maximum values that make sense, and also that each of your variables shows the appropriate number of counties.
-- Be sure to use `include_factors = TRUE` in your call to `describe_distribution()` so that we get some basic information about your factor variable.
- 
+1. Use the `tabyl()` function from the `janitor` package to produce a two-way table of `state` (in the rows) classified against the factor variable (with levels Low and High, plus some missing values, in the columns) that you created in Data Task 4 from the [Data page](data.qmd).
+
+- Be sure to include both row and column marginal totals in your `tabyl()` result here. 
+- We should see some missing values in the columns.
+
+2. Display the results of `describe_distribution()` from the `datawizard` package (from the `easystats` meta-package), run on the entire tibble. 
+
+- For all variables except the two factors, this will allow us to see (among other things) that the minimum and maximum values that make sense, and also that each of your variables shows the appropriate number of counties.
+
 ## Section 11. The Codebook
 
 Begin this section with a statement of the number of counties and variables (should be eleven) in your tibble.

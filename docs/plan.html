@@ -213,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
 <li>a Quarto (.qmd) file containing your data management work, and the other elements required in the Project A Plan, and</li>
 <li>the HTML result of rendering your Quarto file.</li>
 </ol>
-<p>The deadline for the Project A Plan is on the <a href="https://thomaselove.github.io/431-2024/calendar.html">Course Calendar</a></p>
+<p>The deadline for the Project A Plan is found on the <a href="https://thomaselove.github.io/431-2024/calendar.html">Course Calendar</a></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -337,10 +337,19 @@ Note
 </section>
 <section id="section-10.-numerical-summaries" class="level2" data-number="5.10">
 <h2 data-number="5.10" class="anchored" data-anchor-id="section-10.-numerical-summaries"><span class="header-section-number">5.10</span> Section 10. Numerical Summaries</h2>
-<p>You will display the results of <code>describe_distribution()</code> from the <code>datawizard</code> package (from the <code>easystats</code> meta-package), run on the entire tibble.</p>
+<p>You will do two things here.</p>
+<ol type="1">
+<li>Use the <code>tabyl()</code> function from the <code>janitor</code> package to produce a two-way table of <code>state</code> (in the rows) classified against the factor variable (with levels Low and High, plus some missing values, in the columns) that you created in Data Task 4 from the <a href="./data.html">Data page</a>.</li>
+</ol>
 <ul>
-<li>For all variables, we need to see minimum and maximum values that make sense, and also that each of your variables shows the appropriate number of counties.</li>
-<li>Be sure to use <code>include_factors = TRUE</code> in your call to <code>describe_distribution()</code> so that we get some basic information about your factor variable.</li>
+<li>Be sure to include both row and column marginal totals in your <code>tabyl()</code> result here.</li>
+<li>We should see some missing values in the columns.</li>
+</ul>
+<ol start="2" type="1">
+<li>Display the results of <code>describe_distribution()</code> from the <code>datawizard</code> package (from the <code>easystats</code> meta-package), run on the entire tibble.</li>
+</ol>
+<ul>
+<li>For all variables except the two factors, this will allow us to see (among other things) that the minimum and maximum values that make sense, and also that each of your variables shows the appropriate number of counties.</li>
 </ul>
 </section>
 <section id="section-11.-the-codebook" class="level2" data-number="5.11">

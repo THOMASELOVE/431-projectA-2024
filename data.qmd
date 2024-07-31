@@ -25,11 +25,11 @@ Trust us. You'll save **a lot** of time and energy if you do so.
 
 Your Project A will use the 2024 version of the analytic data from [County Health Rankings](https://www.countyhealthrankings.org/) (**CHR 2024**) for most of the work^[In Analysis 3, we will also use **CHR 2019** as you'll see]. Some prior CHR data has been part of our course, but you'll obtain, clean and manage a new data set for Project A.
 
-The key elements we'll use are found in the [Rankings Data & Documentation section](https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation) at the County Health Rankings website, specifically the National Data & Documentation section site for the 2024 County Health Rankings. Specifically, you'll need to download three files in order to get and use the data:
+The key elements we'll use are found in the [Rankings Data & Documentation section](https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation) at the County Health Rankings website, specifically the National Data & Documentation section site for the 2024 County Health Rankings. Specifically, you'll need to download four files in order to get and use the data:
 
 - [the 2024 CHR CSV Analytic Data](https://www.countyhealthrankings.org/sites/default/files/media/document/analytic_data2024.csv) (a .csv file)
-- [the 2024 CHR CSV/SAS Analytic Data Documentation](https://www.countyhealthrankings.org/sites/default/files/media/document/2024%20Analytic%20Documentation.pdf) file (PDF), and
 - [the 2024 Data Dictionary](https://www.countyhealthrankings.org/sites/default/files/media/document/DataDictionary_2024.pdf) (PDF)
+- [the 2024 Technical Document](https://www.countyhealthrankings.org/sites/default/files/media/document/2024%20CHRR%20Technical%20Document_1.pdf)
 
 In addition, when building the Codebook as part of your [Project A Plan](plan.qmd), you'll use [this CHR 2024 Measures link](https://www.countyhealthrankings.org/health-data/county-health-rankings-measures) to obtain further details on the variables you select. 
 
@@ -66,16 +66,32 @@ chr_2024_raw <- read_csv(data_url, skip = 1, guess_max = 4000,
          ends_with("rawvalue"))
 ```
 
+```{r}
+#| echo: false
+
+data_url <- 
+  "https://www.countyhealthrankings.org/sites/default/files/media/document/analytic_data2024.csv"
+
+chr_2024_raw <- read_csv(data_url, skip = 1, guess_max = 4000,
+                         show_col_types = FALSE) |>
+  select(fipscode, county, state, county_clustered, year,
+         ends_with("rawvalue"))
+
+chr_2024 <- chr_2024_raw |> filter(county_clustered == 1)
+
+chr_2024_useful <- chr_2024 |>
+  filter(state %in% c("AL", "AR", "CA", "CO", "FL", "GA", 
+                      "IA", "ID", "IL", "IN", "KS", "KY",
+                      "LA", "MD", "MI", "MN", "MO", "MS",
+                      "MT", "NC", "ND", "NE", "NJ", "NM",
+                      "NY", "OH", "OK", "OR", "PA", "SC",
+                      "SD", "TN", "TX", "UT", "VA", "WA",
+                      "WI", "WV", "WY"))
+```
+
 This code should create a `chr_2024_raw` tibble with 3195 rows (observations) and 90 columns (variables). 
 
 To complete Task 1, you'll need to augment the code above to restrict the `chr_2024_raw` data to include only the **3088** rows which have "county_clustered" values of 1, since the other rows will not be used by us in this project. 
-
-::: {.callout-note}
-
-Use the `filter()` function from the `dplyr` package in the `tidyverse` to include only the counties ranked by CHR. (A county_clustered value of 1 means that the county was ranked.)
-
-:::
-
 At the end of Task 1, your `chr_2024_raw` tibble should have 3088 rows (counties) and 90 columns (variables).
 
 # Data Task 2. Select six states
@@ -121,7 +137,7 @@ Remember to select six states (including `OH`) yielding a total of 300-800 count
 - For example, one possible combination would be `IN` (92), `MD` (24), `NJ` (21), `OR` (36) and `WA` (39) with `OH` (88) yielding exactly 300 counties.
 - another possibility would be `GA` (159), `TX` (244), `IL` (102), `MN` (87) and `KY` (120) with `OH` (88) yielding exactly 800 counties.
 
-After making your selection, and filtering the data, you should have a tibble called `chr_2024` which contains all of the 300-800 counties in your six states, and 90 columns. 
+After making your selection, and filtering the data, you should have a tibble called `chr_2024` which contains all of the 300-800 counties in your six states, and 90 columns. Be sure that the `state` variable is now a *factor* variable, rather than just a `character` variable in your tibble.
 
 # Data Task 3. Select analytic variables
 
@@ -131,7 +147,7 @@ Variable <br /> Name | Description
 -----------: | -------------------------------------------------------------
 `fipscode` | the five-digit FIPS code for the county, which will be a convenient ID variable that is distinct for each row in your tibble
 `county` | the name of the county, which will be useful for labeling and identifying the counties
-`state` | a multi-categorical (with 6 levels) variable of two-letter postal abbreviations for your six selected states (this should be a factor variable thanks to your making it one at the end of Task 2)
+`state` | a multi-categorical (with 6 levels) variable of two-letter postal abbreviations for your six selected states (as mentioned above, this should be a factor in R)
 `county_clustered` | tells us whether the row should be included in our data <br /> (all rows should have `county_clustered == 1`)
 
 This set of four variables will then be followed by five variables that you will select from Table B, below.
@@ -143,7 +159,7 @@ Each of the variables you select should be of some interest to you on its own, i
 You must select five **different** variables from Table B, as described below.
 
 1. Variable 1 will be your outcome for Analysis 1. It should be a measure describing some aspect of a community's health, rather than a demographic characteristic. Variables listed in Table B as Analysis 1 or 2 (predictor) should not be used as outcomes for either Analysis 1 or 2. As a result, you will be choosing one of these 20 variables for your Analysis 1 outcome:
-    - v001, v002, v009, v011, v036, v042, v044, v049, v050, v060, v067, v070, v125, v127, v133, v139, v140, v143, v155, or v166
+    - `v001`, `v002`, `v009`, `v011`, `v036`, `v042`, `v044`, `v049`, `v050`, `v060`, `v067`, `v070`, `v125`, `v127`, `v136`, `v139`, `v140`, `v143`, `v155`, or `v166`.
 2. Variable 2 will be your predictor for Analysis 1, so the relationship between variables 1 and 2 should be of interest to you.
     - You can select any of the 30 variables in Table B for your Analysis 1 predictor.
 3. Variable 3 will be your outcome for Analysis 2. Like variable 1, it should describe some aspect of a community's health, rather than just its demographics.
@@ -151,13 +167,13 @@ You must select five **different** variables from Table B, as described below.
 4. Variable 4 (after you categorize it, later) will be your predictor for Analysis 2. Again, the relationship between variables 3 and 4 should be of interest.
     - You can select any of the 30 variables in Table B for your Analysis 2 predictor.
 5. Variable 5 is your Analysis 3 outcome, which you will compare to its CHR 2019 value in the County Health Rankings data. This is restricted a bit more, and Table B shows 10 options for Analysis 3.
-    - These 10 options are: v001, v009, v011, v036, v042, v049, v060, v070, v139, or v143.
+    - These 10 options are: `v009`, `v011`, `v036`, `v042`, `v049`, `v060`, `v070`, `v127`, `v139`, or `v143`.
 
 Remember that each of your five selections must be a different variable.
 
 ## Information to help select and build a codebook
 
-The [2024 CHR Analytic Data Documentation](https://www.countyhealthrankings.org/sites/default/files/media/document/2024%20Analytic%20Documentation.pdf) file (PDF), and the [2024 Data Dictionary](https://www.countyhealthrankings.org/sites/default/files/media/document/DataDictionary_2024.pdf) file (also PDF) are crucial here, as those are the ones that explain what the available variables mean, and how they should be labeled. 
+The [2024 CHR Technical Document](https://www.countyhealthrankings.org/sites/default/files/media/document/2024%20CHRR%20Technical%20Document_1.pdf) file (PDF), and the [2024 Data Dictionary](https://www.countyhealthrankings.org/sites/default/files/media/document/DataDictionary_2024.pdf) file (also PDF) are crucial here, as those are the ones that explain what the available variables mean, and how they should be labeled. 
 
 - In building your codebook for the Project A Plan, you will also need look up each measure you select at [this CHR 2024 Measures link](https://www.countyhealthrankings.org/health-data/county-health-rankings-measures), so now would be a good time to do that, as well.
 
@@ -174,7 +190,7 @@ You will select **five different** variables from the list in Table B of variabl
 
 Variable | Brief Label from CHR | Analyses | Cleaning Requirements
 ------: | ---------------------- | :-----: | ----------------------------
-**`v001`** | Premature death | 1, 2 or 3 | Divide by 100 to represent losses per 1000 population. Don't use `v127` in same analysis.
+**`v001`** | Premature death | 1 or 2 | Divide by 100 to represent losses per 1000 population. Don't use `v127` in same analysis.
 **`v002`** | Poor or fair health | 1 or 2 | Multiply by 100 to describe *percentage*, rather than proportion
 **`v009`** | Adult smoking | 1, 2 or 3 | Multiply by 100 to describe *percentage*, rather than proportion
 **`v011`** | Adult obesity | 1, 2 or 3 | Multiply by 100 to describe *percentage*, rather than proportion
@@ -195,9 +211,9 @@ Variable | Brief Label from CHR | Analyses | Cleaning Requirements
 **`v085`** | Uninsured | 1 or 2 <br /> (predictor) | Multiply by 100 to describe *percentage*, rather than proportion
 **`v125`** | Air pollution - particulate matter | 1 or 2 | OK as is.
 **`v126`** | Proportion non-hispanic white | 1 or 2 <br /> (predictor) | Multiply by 100 to describe *percentage*, rather than proportion. Also, see note below.
-**`v127`** | Premature age-adjusted mortality | 1 or 2 | OK as is. Do not use in same analysis as `v001`.
-**`v133`** | Food environment index | 1 or 2 | OK as is.  Don't use `v139` in same analysis.
-**`v139`** | Food insecurity | 1, 2 or 3 | Multiply by 100 to describe *percentage*, rather than proportion. Don't use `v133` in same analysis.
+**`v127`** | Premature age-adjusted mortality | 1, 2 or 3 | OK as is. Do not use in same analysis as `v001`.
+**`v136`** | Severe housing problems | 1 or 2 | Multiply by 100 to describe *percentage*, rather than proportion. 
+**`v139`** | Food insecurity | 1, 2 or 3 | Multiply by 100 to describe *percentage*, rather than proportion. 
 **`v140`** | Social associations | 1 or 2 | OK as is.
 **`v143`** | Insufficient sleep | 1, 2 or 3 | Multiply by 100 to describe *percentage*, rather than proportion
 **`v151`** | Gender pay gap | 1 or 2 <br /> (predictor) | OK as is.
@@ -209,7 +225,7 @@ Variable | Brief Label from CHR | Analyses | Cleaning Requirements
 
 - The variable `v001` is very tempting to use an outcome. That’s OK, but be sure to consider the use of `v127` as an outcome if mortality interests you. Do not use `v001` and `v127` in the same Analysis.
 - A serious look at the impact of race/ethnicity is beyond the scope of Project A. If you are interested in studying race and ethnicity and their impact on a health outcome, we suggest using `v126`, (or its inverse, 1 - `v126`), to incorporate this dimension as a predictor. This is because there's more variation in the `v126` data across the reported counties than other variables describing race or ethnicity. 
-- The **brief label from CHR 2024** column in Table B are shown in the first (deleted in R) row in the raw .csv file for 2024, and are also specified in the [2024 CHR Analytic Data Documentation](https://www.countyhealthrankings.org/sites/default/files/media/document/2024%20Analytic%20Documentation.pdf) PDF file.
+- The **brief label from CHR** column in Table B are shown in the first (deleted in R) row in the raw .csv file for 2024, and are also specified in the [2024 CHR Data Dictionary](https://www.countyhealthrankings.org/sites/default/files/media/document/DataDictionary_2024.pdf) PDF file.
 - A key issue for developing these variables is correctly specifying the units of measurement (note that the indexes don't have units) so that you should be careful to note that in selecting your variables.
 
 :::
@@ -225,34 +241,63 @@ Use the (cleaned and renamed) version of each variable in your work going forwar
 
 # Data Task 4. Create a factor for the Analysis 2 predictor
 
-Create a new categorical variables (factor) based on your fourth variable, and add this new factor to your **chr_2024** tibble. You'll also retain the original (quantitative) version of this variable, so your tibble will now have 10 variables.
+Create a new categorical variables (factor) based on your fourth variable, and add this new factor to your **chr_2024** tibble. You'll also retain the original (quantitative) version of this variable, so your tibble will now have 10 variables. I'll describe the three steps here, and then show some sample code.
 
 1. Divide the values in your variable 4 into three groups, as follows:
     - values in the lowest 40% of your sample's observations (the low group)
     - values in the middle 20% of your sample's observations (the middle group)
     - values in the highest 40% of your sample's observations (the high group)
-
+    
 2. Create a new factor which has two levels, low and high (although you can use other labels if you prefer), based on your three-level categorization, and treats the rest (middle group) as missing. 
     - This should yield (from your original set of 300-800 counties) between 120 and 320 counties having the low level, 120-320 having the  high level, and 60-160 missing values in the new factor variable.
 
 3. Add the resulting (binary) factor to your **chr_2024** tibble. 
 
+Here's some sample code for these three steps.
+
+To establish our cutpoints, we should look at the 40th and 60th percentiles of the existing data for our planned predictor for Analysis 2, which I'll call `varXXX`.
+
+```{r}
+#| eval: false
+
+chr_2024 |>
+  summarise(q40 = quantile(varXXX, c(0.4)),
+            q60 = quantile(varXXX, c(0.6)))
+            
+```
+
+Suppose those results were 7 and 12. Then we want to create a three-level variable where values of 7 and lower will fall in the "Low" group, and values of 12 and higher will fall in the "High" group^[We could have chosen to use "less than 7" and "higher than 12" as well, which would potentially have a small impact on our final groups.].
+
+```{r}
+#| eval: false
+
+chr_2024 <- chr_2024 |>
+  mutate(varXXX_grp = case_when(
+    varXXX <= 7 ~ "Low",
+    varXXX >= 12 ~ "High")) |>
+  mutate(varXXX_grp = factor(varXXX_grp))
+```
+
+This should result in a `varXXX_grp` variable being in your `chr_2024` now, where about 40% of our subjects in the High group and about 40% in the Low group, with the rest now listed as missing, and the `varXXX_grp` variable is now a factor. So you'll want to demonstrate that all of those things are true in your case.
+
 ::: {.callout-note}
 
-- If `v009_rawvalue` (about adult smoking) is to be your categorical factor for Analysis 2, then you should include both the original quantitative value (renamed `adult_smoking_raw`) and your categorical variable that you'll actually use in analyses, which should be named something like `adult_smoking_cat` or `adult_smoking_grp`.
+1. If you have any missing values (there won't be many) in your variable 4, those values should be listed with the  missing group in your new factor.
+2. If `v009_rawvalue` (about adult smoking) is to be your categorical factor for Analysis 2, then you should include both the original quantitative value (renamed `adult_smoking_raw`) and your categorical variable that you'll actually use in analyses, which should be named something like `adult_smoking_cat` or `adult_smoking_grp`.
 
 :::
 
 # Data Task 5. Add data from CHR 2019 for your Analysis 3 outcome
 
-The data in the `431-projA-chr_2019.csv` file on our [431-data](https://github.com/THOMASELOVE/431-data) repository should be used to pull in the data from CHR 2019.
+The data in the `431-projectA-chr_2019.csv` file on our [431-data](https://github.com/THOMASELOVE/431-data) repository should be used to pull in the data from CHR 2019.
 
-Assuming you have placed the `431-projA-chr_2019.csv` file in your R Project directory for Project A, then the following code should pull in the information you'll need into a tibble.
+Assuming you have placed the `431-projectA-chr_2019.csv` file in your R Project directory for Project A, then the following code should pull in the information you'll need into a tibble.
 
 ```{r}
 #| eval: false
-chr_2019_raw <- read_csv("431-projA-chr_2019.csv", 
-                         guess_max = 4000, show_col_types = FALSE)
+chr_2019_raw <- read_csv("431-projectA-chr_2019.csv", 
+                         guess_max = 4000, 
+                         show_col_types = FALSE)
 
 chr_2019_raw <- chr_2019_raw |> 
   mutate(fipscode = as.character(fipscode))
@@ -279,14 +324,14 @@ Now look at your result, and rename the two versions of your Analysis 3 outcome 
 
 ::: {.callout-note}
 
-Across all of the states you might have selected back in Data Task 3, each of these variables has information for **2,952** ranked counties in CHR 2024. However, **33** counties were ranked in CHR 2024 but not in CHR 2019. When we join the data in CHR 2024 to the data in CHR 2019, there are **33** counties with missing CHR 2019 data on these variables.
+Across all of the states you might have selected back in Data Task 3, each of these variables has information for **2,958** ranked counties in CHR 2024. However, **14** counties were ranked in CHR 2024 but not in CHR 2019. When we join the data in CHR 2024 to the data in CHR 2019, there are **14** counties with missing CHR 2019 data on these variables.
 
-**The affected states** are: CA (3 counties with missing CHR 2019 data), CO (2), ID (1), KS (1), LA (7), MD (1), MI (1), MN (2), MO (2), MS (1), MT (3), PA (1), SD (1), TX (2), UT (1) and VA (4).
+**The affected states** are: CO (1 county with missing CHR 2019 data), ID (1), KS (2), MS (1), MT (2), ND (2), NE (1), OR(1), SD (1), TX (1) and UT (1).
 
 As a result, depending on what states you selected, this joining may or may not produce missing values in your CHR 2019 version of the Analysis 3 outcome.
 :::
 
-## Sources and Years for CHR 20019 Variables
+## Sources and Years for CHR 2019 Variables
 
 County Health Rankings data for variables reported in CHR 2019 eligible for use in Project A Analysis 3 are listed below, with their descriptions, including the source and year(s) in which they were gathered. Please incorporate this information into your codebook.
 
@@ -295,15 +340,15 @@ Similar information for CHR 2024 variables is found at [this link](https://www.c
 
 Variable | Brief Label from CHR  | Source | Year(s)
 ------: | ---------------------- | --------------------------- | :-------:
-**`v001`** | Premature death | National Center for Health Statistics - Mortality Files | 2014-16
 **`v009`** | Adult smoking | Behavioral Risk Factor Surveillance System | 2016
-**`v011`** | Adult obesity | CDC Diabetes Interactive Atlas | 2014
+**`v011`** | Adult obesity | CDC Diabetes Interactive Atlas | 2015
 **`v036`** | Poor physical health days | Behavioral Risk Factor Surveillance System | 2016
 **`v042`** | Poor mental health days | Behavioral Risk Factor Surveillance System | 2016
 **`v049`** | Excessive drinking | Behavioral Risk Factor Surveillance System | 2016
-**`v060`** | Diabetes prevalence | CDC Diabetes Interactive Atlas | 2014
-**`v070`** | Physical inactivity | CDC Diabetes Interactive Atlas | 2014
-**`v139`** | Food insecurity | Map the Meal Gap	| 2015
+**`v060`** | Diabetes prevalence | CDC Diabetes Interactive Atlas | 2015
+**`v070`** | Physical inactivity | CDC Diabetes Interactive Atlas | 2015
+**`v127`** | Premature age-adjusted mortality | CDC WONDER Mortality Data | 2015-2017
+**`v139`** | Food insecurity | Map the Meal Gap	| 2016
 **`v143`** | Insufficient sleep | Behavioral Risk Factor Surveillance System | 2016
 
 

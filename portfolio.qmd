@@ -95,17 +95,17 @@ Before submitting your final report, check these things. Your work will receive 
 
 # Grading the Portfolios
 
-Project A is graded on a scale from 0 to 100, theoretically, although I expect the highest grade to be around 95. Dr. Love works with the TAs to provide feedback and grade the projects, but the final Project A grade is determined solely by him.
+Project A is graded on a scale from 0 to 120, theoretically, although I expect the highest grade to be around 116. Dr. Love works with the TAs to provide feedback and grade the projects, but the final Project A grade is determined solely by him.
 
 - A successful **Plan** is a mandatory part of Project A, and is worth 20 points as part of the Project A grade. 
-- The **Portfolio Report** is worth 45 points. It is unlikely that anyone will score above 43 points, which is the planned score for a completely accurate and polished report. Most scores will likely fall between 32 and 42 points on this element.
+- The **Portfolio Report** is worth 60 points. It is unlikely that anyone will score above 58 points, which is the planned score for a completely accurate and polished report. Most scores will likely fall between 42 and 57 points on this element.
     - The most important parts of the Report are accurate (and effectively presented) data development, accurate (and effectively presented) analyses, and the appropriateness of your research questions and your responses to them in light of your analyses. The reflection in section 16 is also important.
-- The **Video** is worth 25 points. It is unlikely that anyone will score above 24 points, which is the planned score for a very strong presentation, which is clear to see and hear and which is very effective. Most scores will likely fall between 18 and 23 points on this element.
+- The **Video** is worth 30 points. It is unlikely that anyone will score above 29 points, which is the planned score for a very strong presentation, which is clear to see and hear and which is very effective. Most scores will likely fall between 21 and 28 points on this element.
     - All videos should include a clear statement of the research questions for each of the two analyses presented, and justify the responses to those questions with results from the analyses.
     - Many of the comments Professor Love builds in response to your Project A will relate to the Video. Do not treat it lightly. It is a vital part of the work, despite its short length.
 - The **Self-Evaluation** is worth 10 points. People who complete each question on the self-evaluation thoughtfully and on time will receive either 9 or 10 points. Those who do not will receive fewer points.
 
-Project grading is set up to generate a median score near 85.
+Project grading is set up to generate a median score in the low 100s out of a possible 120 points.
 
 ## Hint: More isn't better.
 
