@@ -1,5 +1,5 @@
 ---
-title: "Examples"
+title: "Project A Examples"
 author: "Thomas E. Love, Ph.D."
 date: last-modified
 ---

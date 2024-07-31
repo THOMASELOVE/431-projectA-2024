@@ -276,17 +276,20 @@ Important
 <section id="data-task-1.-ingest-the-raw-data" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Data Task 1. Ingest the raw data</h1>
 <p>Begin an R Project just for Project A, and create a Quarto file within that project where you will do your data development work. Working from a template, or from your own best understanding of what works well for you, start by loading the packages you’ll need, including the <code>tidyverse</code> and any other packages you plan to use.</p>
-<p>You’ll use <code>read_csv()</code> to ingest your raw <code>.csv</code> file into R and call the resulting tibble <strong>chr_2024_raw</strong>. But as you do this, you’ll need to remove the top row from the .csv within your R code. You should probably look at the raw .csv in Excel or another spreadsheet system so that you know why we need to do this.</p>
-<p>To accomplish this, use the <code>skip = 1</code> command within your <code>read_csv()</code>. Sample code follows:</p>
+<p>You’ll use <code>read_csv()</code> to ingest your raw <code>.csv</code> file into R and call the resulting tibble <strong>chr_2024_raw</strong>. But as you do this, you’ll need to remove the top row from the .csv within your R code. You should probably look at the raw .csv in Excel or another spreadsheet system so that you know why we need to do this. To accomplish this, we’ll use the <code>skip = 1</code> command within your <code>read_csv()</code> call.</p>
+<p>At the same times, we’ll restrict which variables we ingest to the “raw value” versions of the main CHR variables, so that we focus only on variables we plan to actually consider using. This requires a <code>select()</code> statement after the <code>read_csv()</code> to pull in the variables we’ll need, including several whose names end with <code>rawvalue</code></p>
+<p>Sample code follows:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data_url <span class="ot">&lt;-</span> </span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"https://www.countyhealthrankings.org/sites/default/files/media/document/analytic_data2024.csv"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>chr_2024_raw <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(data_url, <span class="at">skip =</span> <span class="dv">1</span>, <span class="at">guess_max =</span> <span class="dv">4000</span>,</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                         <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                         <span class="at">show_col_types =</span> <span class="cn">FALSE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(fipscode, county, state, county_clustered, year,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>         <span class="fu">ends_with</span>(<span class="st">"rawvalue"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>This code should create a <code>chr_2024_raw</code> tibble with 3195 rows (observations) and 770 columns (variables).</p>
-<p>To complete Task 1, write code to restrict the <code>chr_2024_raw</code> data to include only the <strong>3088</strong> rows which have “county_clustered” values of 1, since the other rows will not be used by us in this project.</p>
+<p>This code should create a <code>chr_2024_raw</code> tibble with 3195 rows (observations) and 90 columns (variables).</p>
+<p>To complete Task 1, you’ll need to augment the code above to restrict the <code>chr_2024_raw</code> data to include only the <strong>3088</strong> rows which have “county_clustered” values of 1, since the other rows will not be used by us in this project.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -297,10 +300,10 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>We strongly encourage you to use the <code>filter()</code> function from the <code>dplyr</code> package in the <code>tidyverse</code> to include only the counties ranked by CHR.</p>
+<p>Use the <code>filter()</code> function from the <code>dplyr</code> package in the <code>tidyverse</code> to include only the counties ranked by CHR. (A county_clustered value of 1 means that the county was ranked.)</p>
 </div>
 </div>
-<p>At the end of Task 1, your <code>chr_2024_raw</code> tibble should have 3088 rows (counties) and 770 columns (variables).</p>
+<p>At the end of Task 1, your <code>chr_2024_raw</code> tibble should have 3088 rows (counties) and 90 columns (variables).</p>
 </section>
 <section id="data-task-2.-select-six-states" class="level1" data-number="4">
 <h1 data-number="4"><span class="header-section-number">4</span> Data Task 2. Select six states</h1>
@@ -506,12 +509,12 @@ Note
 <li>For example, one possible combination would be <code>IN</code> (92), <code>MD</code> (24), <code>NJ</code> (21), <code>OR</code> (36) and <code>WA</code> (39) with <code>OH</code> (88) yielding exactly 300 counties.</li>
 <li>another possibility would be <code>GA</code> (159), <code>TX</code> (244), <code>IL</code> (102), <code>MN</code> (87) and <code>KY</code> (120) with <code>OH</code> (88) yielding exactly 800 counties.</li>
 </ul>
-<p>After making your selection, and filtering the data, you should have a tibble called <code>chr_2024</code> which contains all of the 300-800 counties in your six states, and 770 columns.</p>
+<p>After making your selection, and filtering the data, you should have a tibble called <code>chr_2024</code> which contains all of the 300-800 counties in your six states, and 90 columns.</p>
 </section>
 </section>
 <section id="data-task-3.-select-analytic-variables" class="level1" data-number="5">
 <h1 data-number="5"><span class="header-section-number">5</span> Data Task 3. Select analytic variables</h1>
-<p>Next, you will select exactly nine variables (columns) from the 770 you should have at the start of Task 3. These nine variables must include the following four:</p>
+<p>Next, you will select exactly nine variables (columns) from the 90 you should have at the start of Task 3. These nine variables must include the following four:</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 16%">

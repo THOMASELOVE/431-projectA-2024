@@ -48,9 +48,11 @@ Obtaining and cleaning your data takes a little while, but you can start at any 
 
 Begin an R Project just for Project A, and create a Quarto file within that project where you will do your data development work. Working from a template, or from your own best understanding of what works well for you, start by loading the packages you'll need, including the `tidyverse` and any other packages you plan to use.
 
-You'll use `read_csv()` to ingest your raw `.csv` file into R and call the resulting tibble **chr_2024_raw**. But as you do this, you'll need to remove the top row from the .csv within your R code. You should probably look at the raw .csv in Excel or another spreadsheet system so that you know why we need to do this. 
+You'll use `read_csv()` to ingest your raw `.csv` file into R and call the resulting tibble **chr_2024_raw**. But as you do this, you'll need to remove the top row from the .csv within your R code. You should probably look at the raw .csv in Excel or another spreadsheet system so that you know why we need to do this. To accomplish this, we'll use the `skip = 1` command within your `read_csv()` call. 
 
-To accomplish this, use the `skip = 1` command within your `read_csv()`. Sample code follows:
+At the same times, we'll restrict which variables we ingest to the "raw value" versions of the main CHR variables, so that we focus only on variables we plan to actually consider using. This requires a `select()` statement after the `read_csv()` to pull in the variables we'll need, including several whose names end with `rawvalue`
+
+Sample code follows:
 
 ```{r}
 #| eval: false
@@ -59,20 +61,22 @@ data_url <-
   "https://www.countyhealthrankings.org/sites/default/files/media/document/analytic_data2024.csv"
 
 chr_2024_raw <- read_csv(data_url, skip = 1, guess_max = 4000,
-                         show_col_types = FALSE)
+                         show_col_types = FALSE) |>
+  select(fipscode, county, state, county_clustered, year,
+         ends_with("rawvalue"))
 ```
 
-This code should create a `chr_2024_raw` tibble with 3195 rows (observations) and 770 columns (variables). 
+This code should create a `chr_2024_raw` tibble with 3195 rows (observations) and 90 columns (variables). 
 
-To complete Task 1, write code to restrict the `chr_2024_raw` data to include only the **3088** rows which have "county_clustered" values of 1, since the other rows will not be used by us in this project. 
+To complete Task 1, you'll need to augment the code above to restrict the `chr_2024_raw` data to include only the **3088** rows which have "county_clustered" values of 1, since the other rows will not be used by us in this project. 
 
 ::: {.callout-note}
 
-We strongly encourage you to use the `filter()` function from the `dplyr` package in the `tidyverse` to include only the counties ranked by CHR.
+Use the `filter()` function from the `dplyr` package in the `tidyverse` to include only the counties ranked by CHR. (A county_clustered value of 1 means that the county was ranked.)
 
 :::
 
-At the end of Task 1, your `chr_2024_raw` tibble should have 3088 rows (counties) and 770 columns (variables).
+At the end of Task 1, your `chr_2024_raw` tibble should have 3088 rows (counties) and 90 columns (variables).
 
 # Data Task 2. Select six states
 
@@ -117,11 +121,11 @@ Remember to select six states (including `OH`) yielding a total of 300-800 count
 - For example, one possible combination would be `IN` (92), `MD` (24), `NJ` (21), `OR` (36) and `WA` (39) with `OH` (88) yielding exactly 300 counties.
 - another possibility would be `GA` (159), `TX` (244), `IL` (102), `MN` (87) and `KY` (120) with `OH` (88) yielding exactly 800 counties.
 
-After making your selection, and filtering the data, you should have a tibble called `chr_2024` which contains all of the 300-800 counties in your six states, and 770 columns. 
+After making your selection, and filtering the data, you should have a tibble called `chr_2024` which contains all of the 300-800 counties in your six states, and 90 columns. 
 
 # Data Task 3. Select analytic variables
 
-Next, you will select exactly nine variables (columns) from the 770 you should have at the start of Task 3. These nine variables must include the following four:
+Next, you will select exactly nine variables (columns) from the 90 you should have at the start of Task 3. These nine variables must include the following four:
 
 Variable <br /> Name | Description
 -----------: | -------------------------------------------------------------

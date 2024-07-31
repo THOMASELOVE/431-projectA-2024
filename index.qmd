@@ -13,14 +13,14 @@ knitr::opts_chunk$set(comment = NA)
 - The [Data page](data.qmd) contains information on the data you'll use, and on the required cleaning and development of your final project tibble. 
     - You'll need to complete six data management tasks. Start this in **early September**.
 - The [Plan page](plan.qmd) describes the elements of the Project A Plan, which you will submit in late September, according to the deadline on the [Course Calendar](https://thomaselove.github.io/431-2024/calendar.html). 
-    - You will build your Project A Plan in **September**.
+    - You will build your Project A Plan in **the first three weeks of September**.
 - The [Analyses page](analyses.qmd) contains information on the analyses you'll include in your final submission after we accept your Project A Plan.
 - The [Portfolio page](portfolio.qmd) describes the elements of the final Project A submission, which includes the final report, the presentation and the self-evaluation. This page also provides submission instructions.
     - You will build these items in **October**. 
 - The [Examples page](examples.qmd) provides templates for the Project A Plan and for the Final Portfolio Report, and examples we've developed to help you produce what we're looking for in Project A.
 - The top menu also provides links to [contact us](https://thomaselove.github.io/431-2024/contact.html), and to [the 431 home page](https://thomaselove.github.io/431-2024).
 
-All of Project A can be completed using ideas we will discuss in Classes 1-12 in the 431 course.
+All of Project A can be completed using ideas we will discuss in Classes 1-10 in the 431 course.
 
 # What is Project A?
 
@@ -53,7 +53,7 @@ You will be working (mostly) with data from the 2024 edition of [County Health R
 To build your data set, which will be a sample of the full data, you will do a series of things in R.
 
 - You'll select a subset of six states (Ohio will automatically be one of them, so you'll be selecting five others from a list we will provide) which together include at least **300** and no more than **800** counties.
-- You'll select five different quantitative variables from the County Health Rankings data, from a list of 45 options we provide for you.
+- You'll select five different quantitative variables from the County Health Rankings data, from a list of several dozen options we provide.
   - One of these variables will serve as your outcome for Analysis 1.
   - Another will serve as your predictor for Analysis 1.
   - A third will serve as your outcome for Analysis 2.
@@ -106,7 +106,7 @@ I am primarily interested in your learning something interesting, useful and eve
 6. The ability to comment on your work within code, and in written and oral presentation. You have to be able to *reason* about your findings, not just generate the code to solve the problem.
 7. The ability to build a Quarto-based report and to give a short presentation based on key findings from that report.
 
-Project A is about building relatively simple analyses and visualizing data from a (fairly clean) data set I provide to you. Tools necessary for Project A include:
+Project A is about building relatively simple analyses and visualizing data from a (fairly clean) data set. Tools necessary for Project A include:
 
 - Describing the experimental or observational study design used to gather the data, as well as the complete data collection process.
 - Sharing the process of ingesting and tidying the data, with specific reference to the decisions you make to "clean" things up.
@@ -120,4 +120,4 @@ Project A is about building relatively simple analyses and visualizing data from
 
 # Questions?
 
-If you have questions, let us know about them on [Campuswire](https://thomaselove.github.io/431-2024/campuswire.html) using the **projectA** folder, or speak with Dr. Love before or after class, or discuss them with the TAs during office hours.
+If you have questions, let us know about them using any of the approaches described on our [Contact Us page](https://thomaselove.github.io/431-2024/contact.html).
