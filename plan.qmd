@@ -1,0 +1,235 @@
+---
+title: "Project A Plan"
+author: "Thomas E. Love, Ph.D."
+date: last-modified
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(comment = NA)
+```
+
+# The Deliverables
+
+You will develop and send to us (through Canvas):
+
+1. the analytic tibble (as an .Rds data file) you developed following the [Data page](data.qmd) instructions,
+2. a Quarto (.qmd) file containing your data management work, and the other elements required in the Project A Plan, and
+3. the HTML result of rendering your Quarto file.
+
+The deadline for the Project A Plan is on the [Course Calendar](https://thomaselove.github.io/431-2024/calendar.html)
+
+::: {.callout-note}
+
+- Use spell check on your Quarto file before rendering it, and review the HTML result carefully to ensure that no residual warnings or error messages remain in the document.
+- When we run the Quarto file, it needs to produce your HTML file without errors? (Note: warnings or messages are OK at this stage, but it has to work.)
+- Do not suppress the R code at any point in the document. All R code should be echoed.
+- If you are working with a partner, exactly one of you should submit the materials to Canvas, and the other partner should submit a text document (Word or PDF is fine) to Canvas that reads: "My name is [YOUR NAME]. I am working on Project A with [INSERT FULL NAME OF YOUR PARTNER], and they will submit the materials for the Plan"
+
+:::
+
+To complete the Project A Plan, you will need to have completed all six Data Tasks on our [Data page](data.qmd) but none of the work described on our [Analyses page](analyses.qmd)
+
+# Use the Template and Sample Plan
+
+There is a Project A Plan template, and a sample Project A Plan, available to you on the [Examples page](examples.qmd). Please use these tools to facilitate your work, and to help us evaluate your work quickly.
+
+# Project A Plan: Title
+
+You need to come up with a meaningful title (containing at most 80 characters) for your work.
+
+1. Do not use the terms "Project" or "Project A" or "431" in your title. 
+2. You can use "CHR-2024" as the abbreviation in your title for "County Health Rankings, 2024." 
+3. Your title should be no longer than 80 characters. You can use a subtitle if you like, but the title must stand on its own.
+4. It's fine if your title focuses on just one of your three analyses, rather than trying to cram all three into a short title.
+
+# Plan Author(s)
+
+Your full name, and if you worked with a partner, both full names, are found in the author section of the Quarto (in the YAML) and appear legibly at the start of the HTML document.
+
+# Sections of the Project A Plan
+
+The Project A Plan includes sections, as described below.
+
+## Section 1. R Packages
+
+All necessary packages (and no unused packages) should be loaded at the start of the work, and all warnings or messages associated with that loading are suppressed in the HTML result.
+
+::: {.callout-note}
+
+It seems impossible to do this work without the `janitor`, `naniar`, `xfun`, `easystats` and `tidyverse` packages. Remember to load the `tidyverse`  last. The use of other packages is up to you, and you may want to source in the `Love-431.R` script, too.
+
+:::
+
+## Section 2. Data Ingest
+
+This section should display the results of following the instructions in Data Task 1 from the [Data page](data.qmd). In this section, you should ingest the raw data into `chr_2024_raw` and then filter to the ranked counties, producing a tibble with 3195 rows and 770 columns. Do not list the tibble, but use R code to demonstrate that your work meets this requirement.
+
+::: {.callout-note}
+
+We will want to check that the project ingests the data properly. This means that you have eliminated the correct row (in any way that works) as you import the data, and that you have used `read_csv()` to read in the data, thus creating a tibble.
+
+:::
+
+## Section 3. State Selection
+
+This section follows the instructions for [Data Task 2](data.qmd). Here, you will identify your six states by postal abbreviation code and name, and write a sentence or two describing your motivation for these selections. You will also demonstrate that your selection yields a new tibble with 300-800 counties, all of which are ranked, and that you have converted the `state` variable of postal abbreviation codes to a factor.
+
+::: {.callout-note}
+
+- Which states were chosen needs to be clear, and we'll want to read a sentence about why you chose the states you did.
+- This must lead to 300-800 counties, and this number (total number of counties) must be clear from the document (both the number of rows in the final tibble and in writing.)
+- Do not drop any counties from any of the states you selected in the development of your tibble.
+
+:::
+
+## Section 4. Variable Selection 
+
+This section follows the instructions for [Data Task 3](data.qmd). Here, you will provide code to identify and select a total of nine variables, including the four required and your five selected variables. 
+
+## Section 5. Variable Cleaning and Renaming
+
+For each of your selected variables, you will use the instructions in [Data Task 3](data.qmd) to complete appropriate cleaning of the variable, and replace the initial version with your cleaned alternative, renaming each selected variable as you go.
+
+## Section 6. Creating the Analysis 2 Predictor
+
+Use the instructions in [Data Task 4](data.qmd) to develop the binary factor that you will use as your Analysis 2 predictor. Be sure to describe the exact cutpoints used in creating the low and high groups, and demonstrate that the resulting factor has approximately 40% of your original observations in the low group, 40% in the high group, and missing data for the middle 20%.
+
+## Section 7. Adding Data from CHR 2019 for the Analysis 3 Outcome
+
+Use the instructions in [Data Task 5](data.qmd) to include the CHR 2019 version of your Analysis 3 outcome as a variable in your tibble. This should give you a total of 11 variables.
+
+## Section 8. Arranging and Saving The Analytic Tibble
+
+After renaming your variables, arrange the 11 variables in your **chr_2024** tibble into the order specified in [Data Task 6](data.qmd).
+
+Then save the tibble as an R data set. Don't make any changes to the tibble after this point.
+
+## Section 9. Print the Tibble
+
+You will show that your **chr_2024** tibble is in fact a tibble and not just a data frame by listing it, so that we can see that only the first 10 rows are printed, and the columns are appropriately labeled. The command you want is just **`chr_2024`**.
+
+## Section 10. Numerical Summaries
+
+You will display the results of `describe_distribution()` from the `datawizard` package (from the `easystats` meta-package), run on the entire tibble. 
+
+- For all variables, we need to see minimum and maximum values that make sense, and also that each of your variables shows the appropriate number of counties.
+- Be sure to use `include_factors = TRUE` in your call to `describe_distribution()` so that we get some basic information about your factor variable.
+ 
+## Section 11. The Codebook
+
+Begin this section with a statement of the number of counties and variables (should be eleven) in your tibble.
+
+A codebook, including your revised and the original variable names, counts of distinct and missing values, definitions and a clear indication of the cutpoints for your binary factor is the next step. 
+
+After you select your variables, use the [County Health Rankings website's 2024 Measures list](https://www.countyhealthrankings.org/health-data/county-health-rankings-measures), and in particular the linked information on that page for full descriptions, definitions and limitations of the variables you have selected. With regard to the data for Analysis 3 that you obtained from CHR 2019, I provided the relevant information at the end of the instructions for [Data Task 5](data.qmd#sources-and-years-for-2019-chr-variables). 
+
+For more details of what we're looking for here, please refer to the sample codebook provided as part of the sample Plan and the Plan template in the [Examples](examples.qmd) section.
+
+::: {.callout-note}
+
+- You have an attractively formatted, readable codebook that looks nice in your HTML. The example Plan shows one option, but you can come up with something better if you like. It must be run within Quarto though - you cannot submit an image instead of getting the codebook through code.
+- Your selected five variables are clear, and there is information about what the variables mean and why you chose them, and the role they will play in your eventual analyses, specifically you clearly specify which will serve as the Analysis 1 outcome, the Analysis 1 predictor, the Analysis 2 outcome, the quantitative version of your Analysis 2 predictor, and the Extra Variable.
+- For each of your quantitative variables you specify their units in appropriate language drawn from the measure specifications at County Health Rankings (after incorporating appropriate cleaning as described in [Data Task 3](data.qmd).
+- You specify all variables using the name you will use in your final tibble, the `vXXX` code from the original data, and show that you have some understanding of what the variable means, how it was collected and why it is important in the sentences you write below, after your codebook.
+
+:::
+
+At the end of this section, you should complete checks that:
+
+1. You have at least **15 distinct** values across your sample of counties for your Analysis 1 variables, your Analysis 2 outcome and your Analysis 3 outcome (in each year.)
+2. You have no more than 20% missing values in your Analysis 1 variables, your Analysis 2 outcome and your Analysis 3 outcome (in each year.)
+3. You have no missing data at all in your identifying variables (`fipscode`, `state`, `county`) nor in your `county_ranked` variable, and that you have a distinct `fipscode` for every row in your tibble.
+
+## Section 12. Your Research Questions
+
+In this section, you will provide three research questions, one each for Analysis 1, Analysis 2, and Analysis 3. It would help to provide subsections within this section, as I have done in the [Sample Plan](examples.qmd) and [Plan Template](examples.qmd).
+
+For each analysis ...
+
+1. Start by describing what you want to study, and then specify a research question (which should end with a question mark and be something you can resolve with the planned analysis.)
+2. Don’t boil the ocean here. You’re looking for a research question that can be reasonably addressed using your data, so it has to be pretty straightforward.
+3. If you have a pre-existing belief about what will happen, before you look at the data, please feel encouraged to include a statement about that belief before specifying your question.
+
+### Your Research Question for Analysis 1
+
+Here you will propose your Research Question for Analysis 1 and provide some motivation for your variable choices associated with that analysis. A trio of well-developed research questions in this section is the **most important part** of this portfolio.
+
+- A research question will **end with a question mark**, and will be something you will be able to answer (or at least respond to effectively) after your Analysis 1 is complete.
+- Use one research question for Analysis 1, another for Analysis 2, and a third for Analysis 3.
+
+After listing your question, you should **provide some brief speculation** as to the nature of the relationship you anticipate finding based on your hypotheses about the variables you plan to study (following my tips below.)
+
+#### Tips for the research question in Analysis 1
+
+- Examples of dull but moderately effective and minimally appropriate research questions for Analysis 1 would be:
+
+**How well does a linear model using [predictor] predict [outcome], in [number] counties in the states of [list of your states]?**
+
+or
+
+**What is the nature of the association between [predictor] and [outcome], in [number] counties in the states of [list of your states]?**
+
+- You should be able to do meaningfully better than that, especially if you have a reason to believe something in advance about the direction or strength of the association you are anticipating. 
+- However, if you're struggling, using that format will be OK. 
+- A research question uses formal but clear language. 
+- Given your planned analyses, stay away from statements about cause and effect, and don't use the words correlate or regression (in any form) in your research question.
+
+### Research Question for Analysis 2
+
+Here you will propose your Research Question for Analysis 2 and provide some motivation for your variable choices associated with that analysis. All of the tips for Analysis 1 apply in this case, too. 
+
+- Please remember that a research question for this course should end in a question mark.
+- Again, after listing your question, it is completely appropriate for you to provide some brief speculation as to the nature of the relationship you anticipate finding based on your hypotheses about the variables you plan to study.
+- An example of a dull but moderately effective and minimally appropriate research question for Analysis 2 might be:
+
+**Are there meaningful differences in the mean of [outcome] for counties with high and low levels of [predictor]?**
+
+Again, you should be able to do a bit better than that.
+
+### Research Question for Analysis 3
+
+Here you will propose your Research Question for Analysis 3, and provide some motivation for your variable choices associated with that analysis. All of the tips for Analysis 1 apply in this case, too. 
+
+- Please remember that a research question for this course should end in a question mark.
+- Again, after listing your question, it is completely appropriate for you to provide some brief speculation as to the nature of the relationship you anticipate finding based on your hypotheses about the variables you plan to study.
+- An example of a dull but moderately effective and minimally appropriate research question for Analysis 3 might be:
+
+**Are there meaningful differences in the mean of [outcome] for counties in 2024 as compared to 2019?**
+
+Again, you should be able to do a bit better than that.
+
+## Section 13. Reflection
+
+Here you will provide a paragraph describing the most challenging (or difficult) part of completing the work so far, and how you were able to overcome whatever it was that was most challenging.
+
+Your discussion of the biggest challenge includes a paragraph (or more) written in English, with attention paid to grammar, syntax and spelling.  It needs to be clear to us from reading your reflection what your biggest issue was, and how you tried to address it.
+
+## Section 14. Session Information
+
+As we have required in our Labs, there must be a Session Information section at the end of the document. This should indicate that R version 4.3.1. or later is used.
+
+We'd like you to use the `xfun` package's version of `session_info()`.
+
+# Submission Instructions
+
+- Be sure to use spell check (just hit F7) on your Quarto file before rendering it, and review the HTML result carefully to ensure that no residual warnings or error messages remain in the document.
+- Be sure that your Plan includes your name (names if you are working with a partner) as the author in Quarto, and thus in HTML, as well as a proper title. 
+
+Your Plan (including your R data set, Quarto and HTML files) should then be submitted to Canvas by the deadline listed in the [Course Calendar](https://thomaselove.github.io/431-2024/calendar.html). 
+
+# Grading The Project A Plan
+
+Dr. Love and the TAs will review your Project A Plan and either ACCEPT it or ask for a REDO.
+
+- ACCEPT means you're done, and should move on the rest of Project A, perhaps while making some small changes that we request of you in your submission on Canvas.
+    - To receive an ACCEPT, you must meet the specifications above, and also you must have no more than two spelling, typographical or grammatical errors in the document as a whole that we catch.
+- REDO means you'll need to fix the problems we've identified (plus make sure you've done all of the things on this checklist) and resubmit by the deadline we give you, which will require a rapid turnaround.
+    - If your Plan is accepted on the initial submission and was on time, you'll receive 20 points.
+    - If your Plan is accepted on the first REDO (submission 2), you'll receive 18 points out of a possible 20.
+    - If your Plan is accepted on the second REDO (submission 3) or later, you'll receive 16 points out of a possible 20.
+    - We hope we won't have to go further than 3 attempts for anyone.
+
+If you don't have some feature that we "prefer" but doesn't alone require a REDO, we may mention this in our ACCEPT result and ask you to fix it in the final version of the Project A Portfolio.
+
+
+

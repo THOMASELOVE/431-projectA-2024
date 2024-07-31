@@ -1,0 +1,123 @@
+---
+title: "431 Project A Instructions"
+author: "Thomas E. Love, Ph.D."
+date: last-modified
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(comment = NA)
+```
+
+# What is on this Website?
+
+- The [Data page](data.qmd) contains information on the data you'll use, and on the required cleaning and development of your final project tibble. 
+    - You'll need to complete six data management tasks. Start this in **early September**.
+- The [Plan page](plan.qmd) describes the elements of the Project A Plan, which you will submit in late September, according to the deadline on the [Course Calendar](https://thomaselove.github.io/431-2024/calendar.html). 
+    - You will build your Project A Plan in **September**.
+- The [Analyses page](analyses.qmd) contains information on the analyses you'll include in your final submission after we accept your Project A Plan.
+- The [Portfolio page](portfolio.qmd) describes the elements of the final Project A submission, which includes the final report, the presentation and the self-evaluation. This page also provides submission instructions.
+    - You will build these items in **October**. 
+- The [Examples page](examples.qmd) provides templates for the Project A Plan and for the Final Portfolio Report, and examples we've developed to help you produce what we're looking for in Project A.
+- The top menu also provides links to [contact us](https://thomaselove.github.io/431-2024/contact.html), and to [the 431 home page](https://thomaselove.github.io/431-2024).
+
+All of Project A can be completed using ideas we will discuss in Classes 1-12 in the 431 course.
+
+# What is Project A?
+
+Project A is the first of two real data science projects you’ll be doing this semester. For Project A, Professor Love has provided a lot of guidance and much less flexibility than you’ll have in Project B. Each of you will be working with part of the same data set (the [County Health Rankings 2024](https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation) data.) 
+
+You can work alone, or with one other person on this project. If you work as a pair, you create one project together, and each of you receive the same grade on the Project A Plan and final report.
+
+## Deliverables
+
+There are two deadlines, each of which is specified on the [Course Calendar](https://thomaselove.github.io/431-2024/calendar.html).
+
+- The Project A [Plan](plan.qmd) is due in late September. Here you will answer a few specific questions after creating a clean "tibble" for the project, including rows ("counties") and columns ("variables") you will choose from options we provide.
+  - You'll also need to tell us in the Plan whether you are working alone or with another person.
+- The Project A [Portfolio](portfolio.qmd) is due at the end of October, and includes:
+  - a report in Quarto, rendered as HTML of all of your work,
+  - a presentation which highlights some key findings from your report, and
+  - a self-evaluation form, which you'll complete after submitting the presentation and report 
+
+# The Data
+
+You will be working (mostly) with data from the 2024 edition of [County Health Rankings](https://www.countyhealthrankings.org/).
+
+- These data describe most counties in the United States. Counties are located within states in the US. There are 88 counties, for instance, in Ohio.
+- The data are available now (along with extensive additional information) at the [County Health Rankings website](https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation).
+- Everyone in the class will start with the same data set, but will pick a subset of that data that will be different for each project.
+- Analyses 1 and 2 solely use CHR 2024 data, while Analysis 3 adds some data from CHR 2019.
+
+## Cleaning the Data
+
+To build your data set, which will be a sample of the full data, you will do a series of things in R.
+
+- You'll select a subset of six states (Ohio will automatically be one of them, so you'll be selecting five others from a list we will provide) which together include at least **300** and no more than **800** counties.
+- You'll select five different quantitative variables from the County Health Rankings data, from a list of 45 options we provide for you.
+  - One of these variables will serve as your outcome for Analysis 1.
+  - Another will serve as your predictor for Analysis 1.
+  - A third will serve as your outcome for Analysis 2.
+  - Your fourth variable will serve (after categorizing^[Note: Categorizing quantitative information like this turns out to be a terrible idea in practical model-building. We're doing this here for pedagogical reasons.]) as your predictor for Analysis 2.
+  - The fifth variable will serve as your outcome for Analysis 3, and here we'll have to pull in some data from the 2019 version of County Health Rankings, as well.
+- In addition to the five analytic variables listed above, you will add a factor describing some groups within the fourth variable, as well as four pre-specified variables (the county's FIPS code, the state postal abbreviation, the county name, and an indicator that the county is ranked by CHR.)
+- You will also add 2019 data for your fifth variable, using a data set we provide.
+- Your final analytic tibble will have 300-800 rows (counties) and eleven columns (variables.)
+
+# The Project A Plan
+
+In addition to showing us your data management work, your Project A Plan will:
+
+- identify your three research questions which will motivate your three analyses,
+- describe and justify your data management decisions, 
+- provide a codebook for your data, and 
+- summarize your data so we can ensure you're on the right track
+
+We (the TAs and Dr. Love) will review your Project A Plan and (perhaps after some revision) eventually accept it.
+
+# Analyses You'll Do
+
+After your Project A Plan is accepted, you will use your final analytic tibble to complete three Analyses. 
+
+1. Visualizing and modeling the relationship between a quantitative outcome and a quantitative predictor, and using the model to make and assess some predictions.
+2. Visualizing and modeling the relationship between a quantitative outcome and a categorical predictor with two levels, and describing the inferences you can make about comparing the centers of the distributions in the two groups.
+3. Visualizing and modeling the relationship between a quantitative outcome reported in 2024 across your sample of counties, and that same outcome as it was reported in 2019, and then describing some inferences you can make regarding that comparison.
+
+# The Project A Portfolio
+
+As mentioned, your Project A Portfolio (built after your analyses are complete) will include:
+
+- a Final Report (which includes and slightly augments the Portfolio and your Analyses) which includes an R data set, a Quarto file, and an HTML result, along with 
+- a 3-minute (.mp4) video highlighting two findings from your Project A, and
+- a Project A self-evaluation completed by filling out a Google Form.
+
+# Project A Objectives 
+
+It is hard to learn statistics (or anything else) passively; concurrent theory and application are essential^[Though by no means an original idea, this particular phrasing is stolen from Harry Roberts.].
+
+> "Statistics has no reason for existence except as the catalyst for investigation and discovery." [George E. P. Box](https://en.wikipedia.org/wiki/George_E._P._Box)
+
+I am primarily interested in your learning something interesting, useful and even valuable from your project experiences in 431. In particular, an effective Project A will demonstrate:
+
+1. The ability to create and formulate research questions that are statistically and scientifically appropriate.
+2. The ability to turn research questions into measures of interest.
+3. The ability to pull and merge and clean and tidy data, then present the data set following [Jeff Leek's guide to sharing data with a statistician](https://github.com/jtleek/datasharing).
+4. The ability to build a reasonable trio of analyses, and assess their quality.
+5. The ability to identify and (with help) solve problems that crop up.
+6. The ability to comment on your work within code, and in written and oral presentation. You have to be able to *reason* about your findings, not just generate the code to solve the problem.
+7. The ability to build a Quarto-based report and to give a short presentation based on key findings from that report.
+
+Project A is about building relatively simple analyses and visualizing data from a (fairly clean) data set I provide to you. Tools necessary for Project A include:
+
+- Describing the experimental or observational study design used to gather the data, as well as the complete data collection process.
+- Sharing the process of ingesting and tidying the data, with specific reference to the decisions you make to "clean" things up.
+- Descriptive and exploratory summaries of the data including, of course, attractive and well-constructed visualizations, which may include both graphs and tables.
+- Developing appropriate research questions that lead to the identification of smart measures for your three analyses.
+- Regression-based modeling of a quantitative outcome using a quantitative predictor, including discussion of potential transformations, and making predictions.
+- Regression-based comparisons of mean differences for a quantitative outcome across a set of two groups, including appropriate evaluation of the assumptions behind the models you build, and description of inferential results (comparisons).
+- Regression-based comparisons of mean differences when comparing an outcome reported in 2024 to that same outcome reported five years earlier, including appropriate evaluation of the assumptions behind the models you build, and description of inferential results (comparisons).
+
+> Think of a graph as a comparison. All graphs are comparisons (indeed, all statistical analyses are comparisons). If you already have the graph in mind, think of what comparisons it's enabling. Or if you haven't settled on the graph yet, think of what comparisons you'd like to make. [Andrew Gelman](http://andrewgelman.com/2014/03/25/statistical-graphics-course-statistical-graphics-advice/)
+
+# Questions?
+
+If you have questions, let us know about them on [Campuswire](https://thomaselove.github.io/431-2024/campuswire.html) using the **projectA** folder, or speak with Dr. Love before or after class, or discuss them with the TAs during office hours.

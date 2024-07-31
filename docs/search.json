@@ -1,0 +1,352 @@
+[
+  {
+    "objectID": "portfolio.html",
+    "href": "portfolio.html",
+    "title": "Project A Portfolio",
+    "section": "",
+    "text": "Your Final Submission involves three parts, a portfolio report, a “highlight” video, and a self-evaluation.\n\n\nYou will submit a polished report in both Quarto and HTML, incorporating a total of 17 sections, as described below. You will also submit your main data file (chr_2024_YOURNAME.Rds) which should have 11 variables in it.\n\n\n\nYou will produce a video in mp4 format of no more than 3 minutes in length regardless of whether you are working alone or in a team.\nProducing a video often takes a full day of work after the portfolio report is finished. Do not leave yourself without the opportunity to do good work on this.\nIn this video, you will describe what you believe to be one of the most important findings for your Analysis 1, and for either your Analysis 2 or your Analysis 3.\n\nIf you are working alone on the project, begin your presentation by introducing yourself and describing your sample (which states you used and specifying the research questions you’ll be addressing in your discussion.)\nIf you are working in a pair, each of you will present one of the two analyses, either in two separate videos (which combined are no more than 3 minutes long) or in one video. In either case, introduce yourself at the start of your portion of the video, and specify the states you used (even though you and your partner will be using the same states) and the research question you’ll be addressing.\nDo not discuss all three analyses in the video - just show Analysis 1 and one of the other two.\nSince you have only 3 minutes to present a highlight from each of two analyses, you need to focus. Do not give a “play by play” of everything you did in the report. Focus on one key visualization to amplify your conclusions for each analysis. Keeping the video under 3 minutes while giving us a clear understanding of what you found is the hard part.\nAll videos should include a clear statement of the research questions for any analyses presented, and justify the responses to those questions with results from the analyses.\nThe video must stand on its own, in the sense that it must be completely understandable to someone who has not read your report, but who is generally familiar with County Health Rankings and its measurements. You need to tell us everything we need to know to evaluate your claims, and no more.\nYour video must show your face at the start (so recording in Zoom is preferable) and then must share graphs and results taken from your report. Do not build new graphs or results that don’t appear in your report.\n\n\n\n\nOnce you have submitted the other two elements of your project, you will each (whether working alone or with a partner) submit a brief self-evaluation via this Google Form. The form should take about 10 minutes to complete, and will open for submissions two weeks prior to the deadline.\n\nIf you’re curious, the form asks you to address multiple issues related to the Project in multiple-choice questions. There are also two little essays that we’ll ask for, which should be written independently from your partner (if you have one).\nYou will summarize the key finding of your Project A study in your own well-chosen words (where your response should be in the neighborhood of 75 words, describing one key finding, which might come from any of your three analyses.)\nAlso, you will tell us what the most important piece of advice is that you wished you’d heard when you began Project A (and we’d like at least 25 words here)."
+  },
+  {
+    "objectID": "portfolio.html#the-report",
+    "href": "portfolio.html#the-report",
+    "title": "Project A Portfolio",
+    "section": "",
+    "text": "You will submit a polished report in both Quarto and HTML, incorporating a total of 17 sections, as described below. You will also submit your main data file (chr_2024_YOURNAME.Rds) which should have 11 variables in it."
+  },
+  {
+    "objectID": "portfolio.html#the-highlight-video",
+    "href": "portfolio.html#the-highlight-video",
+    "title": "Project A Portfolio",
+    "section": "",
+    "text": "You will produce a video in mp4 format of no more than 3 minutes in length regardless of whether you are working alone or in a team.\nProducing a video often takes a full day of work after the portfolio report is finished. Do not leave yourself without the opportunity to do good work on this.\nIn this video, you will describe what you believe to be one of the most important findings for your Analysis 1, and for either your Analysis 2 or your Analysis 3.\n\nIf you are working alone on the project, begin your presentation by introducing yourself and describing your sample (which states you used and specifying the research questions you’ll be addressing in your discussion.)\nIf you are working in a pair, each of you will present one of the two analyses, either in two separate videos (which combined are no more than 3 minutes long) or in one video. In either case, introduce yourself at the start of your portion of the video, and specify the states you used (even though you and your partner will be using the same states) and the research question you’ll be addressing.\nDo not discuss all three analyses in the video - just show Analysis 1 and one of the other two.\nSince you have only 3 minutes to present a highlight from each of two analyses, you need to focus. Do not give a “play by play” of everything you did in the report. Focus on one key visualization to amplify your conclusions for each analysis. Keeping the video under 3 minutes while giving us a clear understanding of what you found is the hard part.\nAll videos should include a clear statement of the research questions for any analyses presented, and justify the responses to those questions with results from the analyses.\nThe video must stand on its own, in the sense that it must be completely understandable to someone who has not read your report, but who is generally familiar with County Health Rankings and its measurements. You need to tell us everything we need to know to evaluate your claims, and no more.\nYour video must show your face at the start (so recording in Zoom is preferable) and then must share graphs and results taken from your report. Do not build new graphs or results that don’t appear in your report."
+  },
+  {
+    "objectID": "portfolio.html#the-self-evaluation",
+    "href": "portfolio.html#the-self-evaluation",
+    "title": "Project A Portfolio",
+    "section": "",
+    "text": "Once you have submitted the other two elements of your project, you will each (whether working alone or with a partner) submit a brief self-evaluation via this Google Form. The form should take about 10 minutes to complete, and will open for submissions two weeks prior to the deadline.\n\nIf you’re curious, the form asks you to address multiple issues related to the Project in multiple-choice questions. There are also two little essays that we’ll ask for, which should be written independently from your partner (if you have one).\nYou will summarize the key finding of your Project A study in your own well-chosen words (where your response should be in the neighborhood of 75 words, describing one key finding, which might come from any of your three analyses.)\nAlso, you will tell us what the most important piece of advice is that you wished you’d heard when you began Project A (and we’d like at least 25 words here)."
+  },
+  {
+    "objectID": "portfolio.html#hint-more-isnt-better.",
+    "href": "portfolio.html#hint-more-isnt-better.",
+    "title": "Project A Portfolio",
+    "section": "6.1 Hint: More isn’t better.",
+    "text": "6.1 Hint: More isn’t better.\nTo improve your grade, perform the elements of the data science cycle (ingestion, tidying, transforming, visualizing, modeling and communicating) more effectively. Presenting work that isn’t relevant to addressing the issues in question will not help your grade. Also, rehearse your video and make sure you present clearly and understandably throughout the (very short) presentation. Make clear choices about what to include - that’s key. Do not just show us everything you did.\nA stronger grade will be associated with doing the tasks we’ve discussed more effectively. Adding a lot of additional and unnecessary analyses/work without editing down to the important issues will not improve your grade, but rather have the opposite effect. We want to see polished, accurate, clear work. Making things clearer is the hardest thing to do, and so it’s the thing that impresses us most."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "431 Project A Instructions",
+    "section": "",
+    "text": "The Data page contains information on the data you’ll use, and on the required cleaning and development of your final project tibble.\n\nYou’ll need to complete six data management tasks. Start this in early September.\n\nThe Plan page describes the elements of the Project A Plan, which you will submit in late September, according to the deadline on the Course Calendar.\n\nYou will build your Project A Plan in September.\n\nThe Analyses page contains information on the analyses you’ll include in your final submission after we accept your Project A Plan.\nThe Portfolio page describes the elements of the final Project A submission, which includes the final report, the presentation and the self-evaluation. This page also provides submission instructions.\n\nYou will build these items in October.\n\nThe Examples page provides templates for the Project A Plan and for the Final Portfolio Report, and examples we’ve developed to help you produce what we’re looking for in Project A.\nThe top menu also provides links to contact us, and to the 431 home page.\n\nAll of Project A can be completed using ideas we will discuss in Classes 1-12 in the 431 course."
+  },
+  {
+    "objectID": "index.html#deliverables",
+    "href": "index.html#deliverables",
+    "title": "431 Project A Instructions",
+    "section": "2.1 Deliverables",
+    "text": "2.1 Deliverables\nThere are two deadlines, each of which is specified on the Course Calendar.\n\nThe Project A Plan is due in late September. Here you will answer a few specific questions after creating a clean “tibble” for the project, including rows (“counties”) and columns (“variables”) you will choose from options we provide.\n\nYou’ll also need to tell us in the Plan whether you are working alone or with another person.\n\nThe Project A Portfolio is due at the end of October, and includes:\n\na report in Quarto, rendered as HTML of all of your work,\na presentation which highlights some key findings from your report, and\na self-evaluation form, which you’ll complete after submitting the presentation and report"
+  },
+  {
+    "objectID": "index.html#cleaning-the-data",
+    "href": "index.html#cleaning-the-data",
+    "title": "431 Project A Instructions",
+    "section": "3.1 Cleaning the Data",
+    "text": "3.1 Cleaning the Data\nTo build your data set, which will be a sample of the full data, you will do a series of things in R.\n\nYou’ll select a subset of six states (Ohio will automatically be one of them, so you’ll be selecting five others from a list we will provide) which together include at least 300 and no more than 800 counties.\nYou’ll select five different quantitative variables from the County Health Rankings data, from a list of 45 options we provide for you.\n\nOne of these variables will serve as your outcome for Analysis 1.\nAnother will serve as your predictor for Analysis 1.\nA third will serve as your outcome for Analysis 2.\nYour fourth variable will serve (after categorizing1) as your predictor for Analysis 2.\nThe fifth variable will serve as your outcome for Analysis 3, and here we’ll have to pull in some data from the 2019 version of County Health Rankings, as well.\n\nIn addition to the five analytic variables listed above, you will add a factor describing some groups within the fourth variable, as well as four pre-specified variables (the county’s FIPS code, the state postal abbreviation, the county name, and an indicator that the county is ranked by CHR.)\nYou will also add 2019 data for your fifth variable, using a data set we provide.\nYour final analytic tibble will have 300-800 rows (counties) and eleven columns (variables.)"
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "431 Project A Instructions",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nNote: Categorizing quantitative information like this turns out to be a terrible idea in practical model-building. We’re doing this here for pedagogical reasons.↩︎\nThough by no means an original idea, this particular phrasing is stolen from Harry Roberts.↩︎"
+  },
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Project A Data",
+    "section": "",
+    "text": "Important\n\n\n\nBefore starting your Data work, it’s a really good idea to read through:\n\nthis entire Data page\nthe entire Project A Plan page, and\nthe Examples material related to the Project A Plan, including the Project A Plan template and the sample Plan.\n\nTrust us. You’ll save a lot of time and energy if you do so."
+  },
+  {
+    "objectID": "data.html#table-a.-states-you-can-select",
+    "href": "data.html#table-a.-states-you-can-select",
+    "title": "Project A Data",
+    "section": "4.1 Table A. States You Can Select",
+    "text": "4.1 Table A. States You Can Select\nThe number of counties (with county_clustered values of 1 in CHR 2024) in each state (specified using its two-letter postal abbreviation) is listed below, for your convenience.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nstate\nState  Name\nclustered  counties\nstate\nState  Name\nclustered  counties\nstate\nState  Name\nclustered  counties\n\n\n\n\nAL\nAlabama\n67\nMD\nMaryland\n24\nOK\nOklahoma\n77\n\n\nAR\nArkansas\n75\nMI\nMichigan\n83\nOR\nOregon\n36\n\n\nCA\nCalifornia\n58\nMN\nMinnesota\n87\nPA\nPennsylvania\n67\n\n\nCO\nColorado\n59\nMO\nMissouri\n115\nSC\nSouth Carolina\n46\n\n\nFL\nFlorida\n67\nMS\nMississippi\n82\nSD\nSouth Dakota\n62\n\n\nGA\nGeorgia\n159\nMT\nMontana\n48\nTN\nTennessee\n95\n\n\nIA\nIowa\n99\nNC\nNorth Carolina\n100\nTX\nTexas\n244\n\n\nID\nIdaho\n43\nND\nNorth Dakota\n51\nUT\nUtah\n28\n\n\nIL\nIllinois\n102\nNE\nNebraska\n79\nVA\nVirginia\n133\n\n\nIN\nIndiana\n92\nNJ\nNew Jersey\n21\nWA\nWashington\n39\n\n\nKS\nKansas\n104\nNM\nNew Mexico\n32\nWI\nWisconsin\n72\n\n\nKY\nKentucky\n120\nNY\nNew York\n62\nWV\nWest Virginia\n55\n\n\nLA\nLouisiana\n64\nOH\nOhio\n88\nWY\nWyoming\n23\n\n\n\nRemember to select six states (including OH) yielding a total of 300-800 counties.\n\nFor example, one possible combination would be IN (92), MD (24), NJ (21), OR (36) and WA (39) with OH (88) yielding exactly 300 counties.\nanother possibility would be GA (159), TX (244), IL (102), MN (87) and KY (120) with OH (88) yielding exactly 800 counties.\n\nAfter making your selection, and filtering the data, you should have a tibble called chr_2024 which contains all of the 300-800 counties in your six states, and 770 columns."
+  },
+  {
+    "objectID": "data.html#variables-for-each-analysis",
+    "href": "data.html#variables-for-each-analysis",
+    "title": "Project A Data",
+    "section": "5.1 Variables for Each Analysis",
+    "text": "5.1 Variables for Each Analysis\nEach of the variables you select should be of some interest to you on its own, in terms of either providing a health outcome of interest, or potentially providing useful information about a feature of the county that might relate to that health outcome. As part of the selection process, you should be developing appropriate research questions that lead to the identification of smart measures of interest (from those available) for predictors and outcomes in our Analyses. See the Project A Plan page in these instructions for more on creating appropriate research questions.\nYou must select five different variables from Table B, as described below.\n\nVariable 1 will be your outcome for Analysis 1. It should be a measure describing some aspect of a community’s health, rather than a demographic characteristic. Variables listed in Table B as Analysis 1 or 2 (predictor) should not be used as outcomes for either Analysis 1 or 2. As a result, you will be choosing one of these 20 variables for your Analysis 1 outcome:\n\nv001, v002, v009, v011, v036, v042, v044, v049, v050, v060, v067, v070, v125, v127, v133, v139, v140, v143, v155, or v166\n\nVariable 2 will be your predictor for Analysis 1, so the relationship between variables 1 and 2 should be of interest to you.\n\nYou can select any of the 30 variables in Table B for your Analysis 1 predictor.\n\nVariable 3 will be your outcome for Analysis 2. Like variable 1, it should describe some aspect of a community’s health, rather than just its demographics.\n\nYou can select any of the 20 variables eligible to be your Analysis 1 outcome as your Analysis 2 outcome.\n\nVariable 4 (after you categorize it, later) will be your predictor for Analysis 2. Again, the relationship between variables 3 and 4 should be of interest.\n\nYou can select any of the 30 variables in Table B for your Analysis 2 predictor.\n\nVariable 5 is your Analysis 3 outcome, which you will compare to its CHR 2019 value in the County Health Rankings data. This is restricted a bit more, and Table B shows 10 options for Analysis 3.\n\nThese 10 options are: v001, v009, v011, v036, v042, v049, v060, v070, v139, or v143.\n\n\nRemember that each of your five selections must be a different variable."
+  },
+  {
+    "objectID": "data.html#information-to-help-select-and-build-a-codebook",
+    "href": "data.html#information-to-help-select-and-build-a-codebook",
+    "title": "Project A Data",
+    "section": "5.2 Information to help select and build a codebook",
+    "text": "5.2 Information to help select and build a codebook\nThe 2024 CHR Analytic Data Documentation file (PDF), and the 2024 Data Dictionary file (also PDF) are crucial here, as those are the ones that explain what the available variables mean, and how they should be labeled.\n\nIn building your codebook for the Project A Plan, you will also need look up each measure you select at this CHR 2024 Measures link, so now would be a good time to do that, as well."
+  },
+  {
+    "objectID": "data.html#table-b.-variables-you-can-select",
+    "href": "data.html#table-b.-variables-you-can-select",
+    "title": "Project A Data",
+    "section": "5.3 Table B. Variables You Can Select",
+    "text": "5.3 Table B. Variables You Can Select\nYou will select five different variables from the list in Table B of variables in the CHR 2024 report.\n\n\n\n\n\n\nNote\n\n\n\n\nThe listing “v001” in Table B refers to the variable named “v001_rawvalue”, and _rawvalue should be similarly appended to each of the other variable codes.\nThere are many vXXX_rawvalue variables in the CHR data which we don’t include in the list below, for several reasons, but usually because of substantial missing data.\n\n\n\n\n\n\n\n\n\n\n\n\nVariable\nBrief Label from CHR\nAnalyses\nCleaning Requirements\n\n\n\n\nv001\nPremature death\n1, 2 or 3\nDivide by 100 to represent losses per 1000 population. Don’t use v127 in same analysis.\n\n\nv002\nPoor or fair health\n1 or 2\nMultiply by 100 to describe percentage, rather than proportion\n\n\nv009\nAdult smoking\n1, 2 or 3\nMultiply by 100 to describe percentage, rather than proportion\n\n\nv011\nAdult obesity\n1, 2 or 3\nMultiply by 100 to describe percentage, rather than proportion\n\n\nv023\nUnemployment\n1 or 2  (predictor)\nMultiply by 100 to describe percentage, rather than proportion\n\n\nv036\nPoor physical health days\n1, 2 or 3\nOK as is.\n\n\nv042\nPoor mental health days\n1, 2 or 3\nOK as is.\n\n\nv044\nIncome inequality\n1 or 2\nOK as is.\n\n\nv049\nExcessive drinking\n1, 2 or 3\nMultiply by 100 to describe percentage, rather than proportion\n\n\nv050\nMammography screening\n1 or 2\nMultiply by 100 to describe percentage, rather than proportion\n\n\nv053\nProportion ages 65 and older\n1 or 2  (predictor)\nMultiply by 100 to describe percentage, rather than proportion\n\n\nv057\nProportion female\n1 or 2  (predictor)\nMultiply by 100 to describe percentage, rather than proportion\n\n\nv058\nProportion rural\n1 or 2  (predictor)\nMultiply by 100 to describe percentage, rather than proportion\n\n\nv059\nProportion not proficient in English\n1 or 2  (predictor)\nMultiply by 100 to describe percentage, rather than proportion\n\n\nv060\nDiabetes prevalence\n1, 2 or 3\nMultiply by 100 to describe percentage, rather than proportion\n\n\nv063\nMedian household income\n1 or 2  (predictor)\nDivide by 1000 to represent income in thousands of dollars\n\n\nv067\nDriving alone to work\n1 or 2\nMultiply by 100 to describe percentage, rather than proportion\n\n\nv070\nPhysical inactivity\n1, 2 or 3\nMultiply by 100 to describe percentage, rather than proportion\n\n\nv085\nUninsured\n1 or 2  (predictor)\nMultiply by 100 to describe percentage, rather than proportion\n\n\nv125\nAir pollution - particulate matter\n1 or 2\nOK as is.\n\n\nv126\nProportion non-hispanic white\n1 or 2  (predictor)\nMultiply by 100 to describe percentage, rather than proportion. Also, see note below.\n\n\nv127\nPremature age-adjusted mortality\n1 or 2\nOK as is. Do not use in same analysis as v001.\n\n\nv133\nFood environment index\n1 or 2\nOK as is. Don’t use v139 in same analysis.\n\n\nv139\nFood insecurity\n1, 2 or 3\nMultiply by 100 to describe percentage, rather than proportion. Don’t use v133 in same analysis.\n\n\nv140\nSocial associations\n1 or 2\nOK as is.\n\n\nv143\nInsufficient sleep\n1, 2 or 3\nMultiply by 100 to describe percentage, rather than proportion\n\n\nv151\nGender pay gap\n1 or 2  (predictor)\nOK as is.\n\n\nv155\nFlu vaccinations\n1 or 2\nMultiply by 100 to describe percentage, rather than proportion\n\n\nv166\nBroadband access\n1 or 2\nMultiply by 100 to describe percentage, rather than proportion\n\n\nv168\nHigh school completion\n1 or 2  (predictor)\nMultiply by 100 to describe percentage, rather than proportion\n\n\n\n\n\n\n\n\n\nNote\n\n\n\n\nThe variable v001 is very tempting to use an outcome. That’s OK, but be sure to consider the use of v127 as an outcome if mortality interests you. Do not use v001 and v127 in the same Analysis.\nA serious look at the impact of race/ethnicity is beyond the scope of Project A. If you are interested in studying race and ethnicity and their impact on a health outcome, we suggest using v126, (or its inverse, 1 - v126), to incorporate this dimension as a predictor. This is because there’s more variation in the v126 data across the reported counties than other variables describing race or ethnicity.\nThe brief label from CHR 2024 column in Table B are shown in the first (deleted in R) row in the raw .csv file for 2024, and are also specified in the 2024 CHR Analytic Data Documentation PDF file.\nA key issue for developing these variables is correctly specifying the units of measurement (note that the indexes don’t have units) so that you should be careful to note that in selecting your variables."
+  },
+  {
+    "objectID": "data.html#clean-and-rename-your-selected-variables",
+    "href": "data.html#clean-and-rename-your-selected-variables",
+    "title": "Project A Data",
+    "section": "5.4 Clean and Rename Your Selected Variables",
+    "text": "5.4 Clean and Rename Your Selected Variables\nFind each of your five selected variables in Table B, then do what is suggested in the Cleaning Requirements section of Table B as part of your data development work for that variable. All of your selected variables should be renamed (and it would help also to apply clean_names() from the janitor package) so as to have descriptive and maximally helpful variable names.\nUse the (cleaned and renamed) version of each variable in your work going forward.\n\nFor example, if you have decided to use as a quantitative variable something like v009_rawvalue, which is about adult smoking, you should rename the variable v009_rawvalue to adult_smoking in your tibble.\nIf you plan to use the variable as your categorical predictor, you should still make the appropriate change to the original quantitative version as indicated in Table B."
+  },
+  {
+    "objectID": "data.html#sources-and-years-for-chr-20019-variables",
+    "href": "data.html#sources-and-years-for-chr-20019-variables",
+    "title": "Project A Data",
+    "section": "7.1 Sources and Years for CHR 20019 Variables",
+    "text": "7.1 Sources and Years for CHR 20019 Variables\nCounty Health Rankings data for variables reported in CHR 2019 eligible for use in Project A Analysis 3 are listed below, with their descriptions, including the source and year(s) in which they were gathered. Please incorporate this information into your codebook.\nSimilar information for CHR 2024 variables is found at this link, and should also be placed in your codebook.\n\n\n\n\n\n\n\n\n\nVariable\nBrief Label from CHR\nSource\nYear(s)\n\n\n\n\nv001\nPremature death\nNational Center for Health Statistics - Mortality Files\n2014-16\n\n\nv009\nAdult smoking\nBehavioral Risk Factor Surveillance System\n2016\n\n\nv011\nAdult obesity\nCDC Diabetes Interactive Atlas\n2014\n\n\nv036\nPoor physical health days\nBehavioral Risk Factor Surveillance System\n2016\n\n\nv042\nPoor mental health days\nBehavioral Risk Factor Surveillance System\n2016\n\n\nv049\nExcessive drinking\nBehavioral Risk Factor Surveillance System\n2016\n\n\nv060\nDiabetes prevalence\nCDC Diabetes Interactive Atlas\n2014\n\n\nv070\nPhysical inactivity\nCDC Diabetes Interactive Atlas\n2014\n\n\nv139\nFood insecurity\nMap the Meal Gap\n2015\n\n\nv143\nInsufficient sleep\nBehavioral Risk Factor Surveillance System\n2016"
+  },
+  {
+    "objectID": "data.html#footnotes",
+    "href": "data.html#footnotes",
+    "title": "Project A Data",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nIn Analysis 3, we will also use CHR 2019 as you’ll see↩︎"
+  },
+  {
+    "objectID": "analyses.html",
+    "href": "analyses.html",
+    "title": "Project A Analyses",
+    "section": "",
+    "text": "Using the tibble you’ve developed following the instructions on the Data and Plan pages, you will perform three analyses, as specified below. Your final portfolio report will include:\n\nSections 1-12 from the Plan, edited as necessary.\nSection 13 will be your Analysis 1, and will have four subsections.\nSection 14 will be your Analysis 2, with four subsections.\nSection 15 will be your Analysis 3, with four subsections.\nSection 16 will be a new Reflections section, discussed in the Portfolio materials.\nSection 17 will be your new location for session information.\n\nThe four subsections for each Analysis are to be labeled:\n\nVariables\nSummaries\nApproach\nConclusions\n\n\n\nFor each of the three Analyses, you will start by re-specifying the variables you are studying, including appropriate units of measurement, and briefly remind us about how your sample was developed, including information on the total number of counties involved in this Analysis, specifying which states are used, and whether any relevant data are missing. Be sure to edit your data management and Codebook in sections from your Plan to accurately describe all variables you are using in your analyses. In particular, no additional adjustments to your tibble should be made after section 8 in your portfolio report.\nIn Plan section 12, you stated the research question you are trying to answer with each analysis. You should also indicate in that section your pre-data collection belief about what conclusion you would draw. In developing your final portfolio report, you should edit these statements (as necessary) to reflect the Analyses you’ve actually done.\n\n\n\nHere, you will provide numerical summaries and visualizations of interest that are relevant to your analysis, and comment on any issues you observe. All of your plots should be attractive and well-labeled, and (when possible) use ggplot tools. Specific suggestions about necessary data descriptions for each Analysis are discussed below.\n\n\n\nEach Analysis should, of course, include all of the R code you used to create your work, and complete English sentences that interpret your results. Your work must demonstrate that you are able to reason about what you’ve done, not just generate the code which works to create results. Here, you will:\n\nAssess which of several options for modeling (Analysis 1) or creating an inference (Analyses 2 and 3) is most appropriate, with the help of useful diagnostics.\nComplete any specialized analytic requirements (as discussed below) unique to that Analysis, and obtain results which allow you to address your research question.\n\n\n\n\nYou will write a two-paragraph conclusions section for each Analysis.\n\nThe first paragraph should provide a clear restatement of your research question, followed by a clear response to that question, motivated by your results. Remember that a research question will end with a question mark, and will be something you will be able to answer (or at least respond to effectively) after your analysis is complete. You should also reflect on your pre-existing belief about what would happen, (as discussed in Section 12) in light of the data.\nThe second paragraph should summarize the key limitations of your Analysis, and opportunities for useful next steps associated with that Analysis. To be clear, just writing “get more data,” though generally good advice, isn’t a sufficient next step. Also, note that it’s not a good idea to suggest limitations that you could fix with the tools you have - instead, apply those tools and build a better Analysis."
+  },
+  {
+    "objectID": "analyses.html#subsection-1.-variables",
+    "href": "analyses.html#subsection-1.-variables",
+    "title": "Project A Analyses",
+    "section": "",
+    "text": "For each of the three Analyses, you will start by re-specifying the variables you are studying, including appropriate units of measurement, and briefly remind us about how your sample was developed, including information on the total number of counties involved in this Analysis, specifying which states are used, and whether any relevant data are missing. Be sure to edit your data management and Codebook in sections from your Plan to accurately describe all variables you are using in your analyses. In particular, no additional adjustments to your tibble should be made after section 8 in your portfolio report.\nIn Plan section 12, you stated the research question you are trying to answer with each analysis. You should also indicate in that section your pre-data collection belief about what conclusion you would draw. In developing your final portfolio report, you should edit these statements (as necessary) to reflect the Analyses you’ve actually done."
+  },
+  {
+    "objectID": "analyses.html#subsection-2.-summaries",
+    "href": "analyses.html#subsection-2.-summaries",
+    "title": "Project A Analyses",
+    "section": "",
+    "text": "Here, you will provide numerical summaries and visualizations of interest that are relevant to your analysis, and comment on any issues you observe. All of your plots should be attractive and well-labeled, and (when possible) use ggplot tools. Specific suggestions about necessary data descriptions for each Analysis are discussed below."
+  },
+  {
+    "objectID": "analyses.html#subsection-3.-approach",
+    "href": "analyses.html#subsection-3.-approach",
+    "title": "Project A Analyses",
+    "section": "",
+    "text": "Each Analysis should, of course, include all of the R code you used to create your work, and complete English sentences that interpret your results. Your work must demonstrate that you are able to reason about what you’ve done, not just generate the code which works to create results. Here, you will:\n\nAssess which of several options for modeling (Analysis 1) or creating an inference (Analyses 2 and 3) is most appropriate, with the help of useful diagnostics.\nComplete any specialized analytic requirements (as discussed below) unique to that Analysis, and obtain results which allow you to address your research question."
+  },
+  {
+    "objectID": "analyses.html#subsection-4.-conclusions",
+    "href": "analyses.html#subsection-4.-conclusions",
+    "title": "Project A Analyses",
+    "section": "",
+    "text": "You will write a two-paragraph conclusions section for each Analysis.\n\nThe first paragraph should provide a clear restatement of your research question, followed by a clear response to that question, motivated by your results. Remember that a research question will end with a question mark, and will be something you will be able to answer (or at least respond to effectively) after your analysis is complete. You should also reflect on your pre-existing belief about what would happen, (as discussed in Section 12) in light of the data.\nThe second paragraph should summarize the key limitations of your Analysis, and opportunities for useful next steps associated with that Analysis. To be clear, just writing “get more data,” though generally good advice, isn’t a sufficient next step. Also, note that it’s not a good idea to suggest limitations that you could fix with the tools you have - instead, apply those tools and build a better Analysis."
+  },
+  {
+    "objectID": "analyses.html#advice-on-variables",
+    "href": "analyses.html#advice-on-variables",
+    "title": "Project A Analyses",
+    "section": "2.1 Advice on Variables",
+    "text": "2.1 Advice on Variables\nIn this section you will build a simple linear regression model to predict your Analysis 1 outcome using your Analysis 1 predictor. Start by identifying those variables, and by restricting your data set for this analysis to the complete cases on those variables.\n\nUse complete English sentences to identify your outcome and your predictor, describing what each variable means and its units of measurement.\nAlso specify how many counties have complete data on both variables.\nFinally, specify the values of your outcome and predictor for Cuyahoga County, in Ohio, where CWRU’s campus is located."
+  },
+  {
+    "objectID": "analyses.html#advice-on-summaries",
+    "href": "analyses.html#advice-on-summaries",
+    "title": "Project A Analyses",
+    "section": "2.2 Advice on Summaries",
+    "text": "2.2 Advice on Summaries\nYou will need to build a visualization of the relationship between the outcome (Y-axis) and the predictor (X-axis) and a written description of what you learn about the association (which should include comments about its direction, shape and strength along with identification of any substantial outliers).\nYou will need to address the possibility of a transformation here:\n\nA specification of any transformations you choose to apply to the X or Y variable in order to obtain a better fit with a simple linear regression, along with some justification for the choice (or for the decision not to apply a transformation.)\n\nFor this part of Project A, confine your search to either a logarithm, an inverse, or a square as applied to the outcome. If you want to consider one of those transformations for the predictor as well, that’s OK but not crucial.\nYou should select the most promising transformation on the basis of a scatterplot (perhaps with a loess smooth and linear fit) after the transformation has been applied. You are permitted but not required to use the Box-Cox approach to help here.\n\n\nIf you decide to use a transformation with either the outcome or predictor before fitting your final model, you should display two plots: one with and one without that transformation. Your plot (including the transformation, if you use one) should include both a loess smooth and the regression line from your final linear model."
+  },
+  {
+    "objectID": "analyses.html#advice-on-approach",
+    "href": "analyses.html#advice-on-approach",
+    "title": "Project A Analyses",
+    "section": "2.3 Advice on Approach",
+    "text": "2.3 Advice on Approach\nFit your model to use your predictor to predict your outcome (applying your selected transformation) and provide the code you used, and the following summary elements in this section.\n\nA written statement of the full prediction equation, with coefficients nicely rounded, and a careful description of what the coefficients mean in context. If you’re using a transformation of the outcome or the predictor, be sure this is reflected in your comments here.\nA tidy summary of the model’s coefficients, including 90% confidence interval for model estimates.\nThe model’s R-squared, residual standard error (sigma), and the number of observations to which the model was fit.\n\n\n2.3.1 Residual Analysis\nAt the end of your Approach section for Analysis 1, you’ll need to:\n\nprepare a pair of residual plots (one to assess residuals vs. fitted values for non-linearity, and one to assess Normality in the residuals or the standardized residuals.)\n\nIf you model is called m1, you could use something like plot(m1, which = c(1:2)) to obtain these two plots and that’s OK, although a ggplot-based alternative using patchwork would be even nicer.\n\ninterpret the residual plots in terms of what they tell you about how well the assumptions of linearity and Normality hold for your setting, in complete English sentences.\ndisplay your model’s prediction for the original (untransformed) outcome you are studying for Cuyahoga County, in Ohio, and compare it to Cuyahoga’s actual value of this outcome.\nidentify the two counties (by name and state) where the model you’ve fit is least successful at predicting the outcome (in the sense of having the largest residual in absolute value.)"
+  },
+  {
+    "objectID": "analyses.html#advice-on-conclusions",
+    "href": "analyses.html#advice-on-conclusions",
+    "title": "Project A Analyses",
+    "section": "2.4 Advice on Conclusions",
+    "text": "2.4 Advice on Conclusions\nFor Analysis 1, you’ll write two paragraphs.\nIn the first paragraph, you should provide a clear restatement of your research question, followed by a clear and appropriate response to your research question, motivated by your results. Most of the time, one model won’t let you come to a strong conclusion about a question of interest, and it is your job to accurately present what information can be specified as a result of the model, without overstating your conclusions.\nThen, write a paragraph which summarizes the key limitations of your work in Analysis 1.\n\nIf you see problems with regression assumptions in your residual plot, that would be a good thing to talk about here, for instance.\nAnother issue that is worth discussing is your target population, and what evidence you can describe that might indicate whether your selected states are a representative sample of the US as a whole, or perhaps some particular part of the United States.\nYou should also provide at least one useful “next step” that you could take to improve this analysis (just saying “get more data” isn’t a sufficient next step.)"
+  },
+  {
+    "objectID": "analyses.html#advice-on-variables-1",
+    "href": "analyses.html#advice-on-variables-1",
+    "title": "Project A Analyses",
+    "section": "3.1 Advice on Variables",
+    "text": "3.1 Advice on Variables\nHere, you have identified one quantitative (Analysis 2 outcome) and one categorical variable (Analysis 2 binary predictor.)\n\nUse complete English sentences to identify your outcome and your predictor, describing what each variable means and its units of measurement.\nAlso specify how many counties have complete data on both variables.\nFinally, specify the values of your outcome and predictor for Cuyahoga County, in Ohio, where CWRU’s campus is located."
+  },
+  {
+    "objectID": "analyses.html#advice-on-summaries-1",
+    "href": "analyses.html#advice-on-summaries-1",
+    "title": "Project A Analyses",
+    "section": "3.2 Advice on Summaries",
+    "text": "3.2 Advice on Summaries\nHere, prepare descriptive summaries of the data across the two predictor groups for your chosen outcome, including, of course, attractive and well-constructed visualizations which can be used for comparisons.\nA comparison boxplot with violins is an excellent option here for the key visualization. Be sure to label it carefully, and use color and/or fill wisely to create a clear and attractive picture."
+  },
+  {
+    "objectID": "analyses.html#advice-on-approach-1",
+    "href": "analyses.html#advice-on-approach-1",
+    "title": "Project A Analyses",
+    "section": "3.3 Advice on Approach",
+    "text": "3.3 Advice on Approach\nYou’ll analyze the results and build a 90% confidence interval for the difference in group means with an appropriate t-based procedure, and with a bootstrap procedure.\nYou’ll then select one of these two procedures to provide your final response, and discuss the reasons behind the choice you made.\nShow your work and your reasoning (not just your code), and comment on any analytic decisions you make. Be sure to actively present and justify any assumptions you are making."
+  },
+  {
+    "objectID": "analyses.html#advice-on-conclusions-1",
+    "href": "analyses.html#advice-on-conclusions-1",
+    "title": "Project A Analyses",
+    "section": "3.4 Advice on Conclusions",
+    "text": "3.4 Advice on Conclusions\nFor Analysis 2, you’ll write two paragraphs.\nIn the first paragraph, you should provide a clear restatement of your research question, followed by a clear and appropriate response to your research question, motivated by your results. Interpret your 90% confidence interval’s endpoints and width in context.\nThen, write a paragraph which summarizes the key limitations of your work in Analysis 2.\n\nIf you see problems with the assumptions behind your choice of interval, that would be a good thing to talk about here, for instance.\nAnother issue that is worth discussing is your target population, and what evidence you can describe that might indicate whether your selected states are a representative sample of the US as a whole, or perhaps some particular part of the United States.\nYou should also provide at least one useful “next step” that you could take to improve this analysis (just saying “get more data” isn’t a sufficient next step.)"
+  },
+  {
+    "objectID": "analyses.html#advice-on-variables-2",
+    "href": "analyses.html#advice-on-variables-2",
+    "title": "Project A Analyses",
+    "section": "4.1 Advice on Variables",
+    "text": "4.1 Advice on Variables\nHere, we have identified two quantitative variables (the same outcome in two different time periods) which are paired (so that they have a natural link between them, and use the same units of measurement.)\n\nYour Analysis 3 material should start with specifications of what the outcome you are studying in this analysis actually means, including its units, and how your samples reported in CHR 2019 and CHR 2024 were created."
+  },
+  {
+    "objectID": "analyses.html#advice-on-summaries-2",
+    "href": "analyses.html#advice-on-summaries-2",
+    "title": "Project A Analyses",
+    "section": "4.2 Advice on Summaries",
+    "text": "4.2 Advice on Summaries\nProvide numerical summaries and visualizations of interest that are relevant to this analysis, and comment on any issues you observe.\nThe natural choice is a boxplot with violin for the paired differences, along with a Normal Q-Q plot of those paired differences. Be sure to remind us how many “pairs” of values you have to work with in your labels for these plots.\nYou will need to provide some evidence on how well the “pairing” worked in this setting, by interpreting the Pearson correlation between the CHR 2019 and CHR 2024 values."
+  },
+  {
+    "objectID": "analyses.html#advice-on-approach-2",
+    "href": "analyses.html#advice-on-approach-2",
+    "title": "Project A Analyses",
+    "section": "4.3 Advice on Approach",
+    "text": "4.3 Advice on Approach\nYou’ll analyze the results and build a 90% confidence interval for the population mean difference with an appropriate t-based procedure, and an appropriate bootstrap procedure.\nYou’ll then select one of these two procedures to provide your final response, and discuss the reasons behind the choice you made.\nShow your work and your reasoning (not just your code), and comment on any analytic decisions you make. Be sure to actively present and justify any assumptions you are making."
+  },
+  {
+    "objectID": "analyses.html#advice-on-conclusions-2",
+    "href": "analyses.html#advice-on-conclusions-2",
+    "title": "Project A Analyses",
+    "section": "4.4 Advice on Conclusions",
+    "text": "4.4 Advice on Conclusions\nFor Analysis 3, you’ll write two paragraphs.\nIn the first paragraph, you should provide a clear restatement of your research question, followed by a clear and appropriate response to your research question, motivated by your results. Interpret your chosen 90% confidence interval’s endpoints and width in context. You should also reflect on your pre-existing belief about what would happen, (as discussed in Section 12) in light of your results.\nThen, write a paragraph which summarizes the key limitations of your work in Analysis 3.\n\nIf you see problems with the assumptions behind your choice of interval, that would be a good thing to talk about here, for instance.\nIf pairing didn’t “help” (in the sense that there was no substantial positive correlation between the CHR 2019 and CHR 2024 reports), that would be worth discussing here.\nAnother issue that is worth discussing is your target population, and what evidence you can describe that might indicate whether your selected states are a representative sample of the US as a whole, or perhaps some particular part of the United States.\nYou should also provide at least one useful “next step” that you could take to improve this analysis (just saying “get more data” isn’t a sufficient next step.)"
+  },
+  {
+    "objectID": "examples.html",
+    "href": "examples.html",
+    "title": "Examples",
+    "section": "",
+    "text": "1 Project A Plan Materials\n\nThe sample proposal using 2019 data is available now. The Quarto file is called 431-projA-sample-portfolio.qmd and it is part of the regular downloads of data and code at our 431-data site. I would start by looking at the HTML result we’ve posted to RPubs.\nThe proposal template, which we used to build the sample proposal, is also available as part of the 431-data site. It is called 431-projA-proposal-template.qmd. The HTML version is also at RPubs.\n\n\n\n2 Project A Portfolio Report Materials\n\nThe portfolio report template, which we used to build the sample portfolio report, is also available as part of the 431-data site. It is called 431-projA-report-template.qmd. The HTML version is also at RPubs.\nThe sample portfolio report adds only a little to what you had in the sample proposal (since I chose not to work through the Analyses for you), but it is available as part of the 431-data site. It is called 431-projA-sample-report.qmd. The HTML version is also at RPubs."
+  },
+  {
+    "objectID": "plan.html",
+    "href": "plan.html",
+    "title": "Project A Plan",
+    "section": "",
+    "text": "You will develop and send to us (through Canvas):\n\nthe analytic tibble (as an .Rds data file) you developed following the Data page instructions,\na Quarto (.qmd) file containing your data management work, and the other elements required in the Project A Plan, and\nthe HTML result of rendering your Quarto file.\n\nThe deadline for the Project A Plan is on the Course Calendar\n\n\n\n\n\n\nNote\n\n\n\n\nUse spell check on your Quarto file before rendering it, and review the HTML result carefully to ensure that no residual warnings or error messages remain in the document.\nWhen we run the Quarto file, it needs to produce your HTML file without errors? (Note: warnings or messages are OK at this stage, but it has to work.)\nDo not suppress the R code at any point in the document. All R code should be echoed.\nIf you are working with a partner, exactly one of you should submit the materials to Canvas, and the other partner should submit a text document (Word or PDF is fine) to Canvas that reads: “My name is [YOUR NAME]. I am working on Project A with [INSERT FULL NAME OF YOUR PARTNER], and they will submit the materials for the Plan”\n\n\n\nTo complete the Project A Plan, you will need to have completed all six Data Tasks on our Data page but none of the work described on our Analyses page"
+  },
+  {
+    "objectID": "plan.html#section-1.-r-packages",
+    "href": "plan.html#section-1.-r-packages",
+    "title": "Project A Plan",
+    "section": "5.1 Section 1. R Packages",
+    "text": "5.1 Section 1. R Packages\nAll necessary packages (and no unused packages) should be loaded at the start of the work, and all warnings or messages associated with that loading are suppressed in the HTML result.\n\n\n\n\n\n\nNote\n\n\n\nIt seems impossible to do this work without the janitor, naniar, xfun, easystats and tidyverse packages. Remember to load the tidyverse last. The use of other packages is up to you, and you may want to source in the Love-431.R script, too."
+  },
+  {
+    "objectID": "plan.html#section-2.-data-ingest",
+    "href": "plan.html#section-2.-data-ingest",
+    "title": "Project A Plan",
+    "section": "5.2 Section 2. Data Ingest",
+    "text": "5.2 Section 2. Data Ingest\nThis section should display the results of following the instructions in Data Task 1 from the Data page. In this section, you should ingest the raw data into chr_2024_raw and then filter to the ranked counties, producing a tibble with 3195 rows and 770 columns. Do not list the tibble, but use R code to demonstrate that your work meets this requirement.\n\n\n\n\n\n\nNote\n\n\n\nWe will want to check that the project ingests the data properly. This means that you have eliminated the correct row (in any way that works) as you import the data, and that you have used read_csv() to read in the data, thus creating a tibble."
+  },
+  {
+    "objectID": "plan.html#section-3.-state-selection",
+    "href": "plan.html#section-3.-state-selection",
+    "title": "Project A Plan",
+    "section": "5.3 Section 3. State Selection",
+    "text": "5.3 Section 3. State Selection\nThis section follows the instructions for Data Task 2. Here, you will identify your six states by postal abbreviation code and name, and write a sentence or two describing your motivation for these selections. You will also demonstrate that your selection yields a new tibble with 300-800 counties, all of which are ranked, and that you have converted the state variable of postal abbreviation codes to a factor.\n\n\n\n\n\n\nNote\n\n\n\n\nWhich states were chosen needs to be clear, and we’ll want to read a sentence about why you chose the states you did.\nThis must lead to 300-800 counties, and this number (total number of counties) must be clear from the document (both the number of rows in the final tibble and in writing.)\nDo not drop any counties from any of the states you selected in the development of your tibble."
+  },
+  {
+    "objectID": "plan.html#section-4.-variable-selection",
+    "href": "plan.html#section-4.-variable-selection",
+    "title": "Project A Plan",
+    "section": "5.4 Section 4. Variable Selection",
+    "text": "5.4 Section 4. Variable Selection\nThis section follows the instructions for Data Task 3. Here, you will provide code to identify and select a total of nine variables, including the four required and your five selected variables."
+  },
+  {
+    "objectID": "plan.html#section-5.-variable-cleaning-and-renaming",
+    "href": "plan.html#section-5.-variable-cleaning-and-renaming",
+    "title": "Project A Plan",
+    "section": "5.5 Section 5. Variable Cleaning and Renaming",
+    "text": "5.5 Section 5. Variable Cleaning and Renaming\nFor each of your selected variables, you will use the instructions in Data Task 3 to complete appropriate cleaning of the variable, and replace the initial version with your cleaned alternative, renaming each selected variable as you go."
+  },
+  {
+    "objectID": "plan.html#section-6.-creating-the-analysis-2-predictor",
+    "href": "plan.html#section-6.-creating-the-analysis-2-predictor",
+    "title": "Project A Plan",
+    "section": "5.6 Section 6. Creating the Analysis 2 Predictor",
+    "text": "5.6 Section 6. Creating the Analysis 2 Predictor\nUse the instructions in Data Task 4 to develop the binary factor that you will use as your Analysis 2 predictor. Be sure to describe the exact cutpoints used in creating the low and high groups, and demonstrate that the resulting factor has approximately 40% of your original observations in the low group, 40% in the high group, and missing data for the middle 20%."
+  },
+  {
+    "objectID": "plan.html#section-7.-adding-data-from-chr-2019-for-the-analysis-3-outcome",
+    "href": "plan.html#section-7.-adding-data-from-chr-2019-for-the-analysis-3-outcome",
+    "title": "Project A Plan",
+    "section": "5.7 Section 7. Adding Data from CHR 2019 for the Analysis 3 Outcome",
+    "text": "5.7 Section 7. Adding Data from CHR 2019 for the Analysis 3 Outcome\nUse the instructions in Data Task 5 to include the CHR 2019 version of your Analysis 3 outcome as a variable in your tibble. This should give you a total of 11 variables."
+  },
+  {
+    "objectID": "plan.html#section-8.-arranging-and-saving-the-analytic-tibble",
+    "href": "plan.html#section-8.-arranging-and-saving-the-analytic-tibble",
+    "title": "Project A Plan",
+    "section": "5.8 Section 8. Arranging and Saving The Analytic Tibble",
+    "text": "5.8 Section 8. Arranging and Saving The Analytic Tibble\nAfter renaming your variables, arrange the 11 variables in your chr_2024 tibble into the order specified in Data Task 6.\nThen save the tibble as an R data set. Don’t make any changes to the tibble after this point."
+  },
+  {
+    "objectID": "plan.html#section-9.-print-the-tibble",
+    "href": "plan.html#section-9.-print-the-tibble",
+    "title": "Project A Plan",
+    "section": "5.9 Section 9. Print the Tibble",
+    "text": "5.9 Section 9. Print the Tibble\nYou will show that your chr_2024 tibble is in fact a tibble and not just a data frame by listing it, so that we can see that only the first 10 rows are printed, and the columns are appropriately labeled. The command you want is just chr_2024."
+  },
+  {
+    "objectID": "plan.html#section-10.-numerical-summaries",
+    "href": "plan.html#section-10.-numerical-summaries",
+    "title": "Project A Plan",
+    "section": "5.10 Section 10. Numerical Summaries",
+    "text": "5.10 Section 10. Numerical Summaries\nYou will display the results of describe_distribution() from the datawizard package (from the easystats meta-package), run on the entire tibble.\n\nFor all variables, we need to see minimum and maximum values that make sense, and also that each of your variables shows the appropriate number of counties.\nBe sure to use include_factors = TRUE in your call to describe_distribution() so that we get some basic information about your factor variable."
+  },
+  {
+    "objectID": "plan.html#section-11.-the-codebook",
+    "href": "plan.html#section-11.-the-codebook",
+    "title": "Project A Plan",
+    "section": "5.11 Section 11. The Codebook",
+    "text": "5.11 Section 11. The Codebook\nBegin this section with a statement of the number of counties and variables (should be eleven) in your tibble.\nA codebook, including your revised and the original variable names, counts of distinct and missing values, definitions and a clear indication of the cutpoints for your binary factor is the next step.\nAfter you select your variables, use the County Health Rankings website’s 2024 Measures list, and in particular the linked information on that page for full descriptions, definitions and limitations of the variables you have selected. With regard to the data for Analysis 3 that you obtained from CHR 2019, I provided the relevant information at the end of the instructions for Data Task 5.\nFor more details of what we’re looking for here, please refer to the sample codebook provided as part of the sample Plan and the Plan template in the Examples section.\n\n\n\n\n\n\nNote\n\n\n\n\nYou have an attractively formatted, readable codebook that looks nice in your HTML. The example Plan shows one option, but you can come up with something better if you like. It must be run within Quarto though - you cannot submit an image instead of getting the codebook through code.\nYour selected five variables are clear, and there is information about what the variables mean and why you chose them, and the role they will play in your eventual analyses, specifically you clearly specify which will serve as the Analysis 1 outcome, the Analysis 1 predictor, the Analysis 2 outcome, the quantitative version of your Analysis 2 predictor, and the Extra Variable.\nFor each of your quantitative variables you specify their units in appropriate language drawn from the measure specifications at County Health Rankings (after incorporating appropriate cleaning as described in Data Task 3.\nYou specify all variables using the name you will use in your final tibble, the vXXX code from the original data, and show that you have some understanding of what the variable means, how it was collected and why it is important in the sentences you write below, after your codebook.\n\n\n\nAt the end of this section, you should complete checks that:\n\nYou have at least 15 distinct values across your sample of counties for your Analysis 1 variables, your Analysis 2 outcome and your Analysis 3 outcome (in each year.)\nYou have no more than 20% missing values in your Analysis 1 variables, your Analysis 2 outcome and your Analysis 3 outcome (in each year.)\nYou have no missing data at all in your identifying variables (fipscode, state, county) nor in your county_ranked variable, and that you have a distinct fipscode for every row in your tibble."
+  },
+  {
+    "objectID": "plan.html#section-12.-your-research-questions",
+    "href": "plan.html#section-12.-your-research-questions",
+    "title": "Project A Plan",
+    "section": "5.12 Section 12. Your Research Questions",
+    "text": "5.12 Section 12. Your Research Questions\nIn this section, you will provide three research questions, one each for Analysis 1, Analysis 2, and Analysis 3. It would help to provide subsections within this section, as I have done in the Sample Plan and Plan Template.\nFor each analysis …\n\nStart by describing what you want to study, and then specify a research question (which should end with a question mark and be something you can resolve with the planned analysis.)\nDon’t boil the ocean here. You’re looking for a research question that can be reasonably addressed using your data, so it has to be pretty straightforward.\nIf you have a pre-existing belief about what will happen, before you look at the data, please feel encouraged to include a statement about that belief before specifying your question.\n\n\n5.12.1 Your Research Question for Analysis 1\nHere you will propose your Research Question for Analysis 1 and provide some motivation for your variable choices associated with that analysis. A trio of well-developed research questions in this section is the most important part of this portfolio.\n\nA research question will end with a question mark, and will be something you will be able to answer (or at least respond to effectively) after your Analysis 1 is complete.\nUse one research question for Analysis 1, another for Analysis 2, and a third for Analysis 3.\n\nAfter listing your question, you should provide some brief speculation as to the nature of the relationship you anticipate finding based on your hypotheses about the variables you plan to study (following my tips below.)\n\n5.12.1.1 Tips for the research question in Analysis 1\n\nExamples of dull but moderately effective and minimally appropriate research questions for Analysis 1 would be:\n\nHow well does a linear model using [predictor] predict [outcome], in [number] counties in the states of [list of your states]?\nor\nWhat is the nature of the association between [predictor] and [outcome], in [number] counties in the states of [list of your states]?\n\nYou should be able to do meaningfully better than that, especially if you have a reason to believe something in advance about the direction or strength of the association you are anticipating.\nHowever, if you’re struggling, using that format will be OK.\nA research question uses formal but clear language.\nGiven your planned analyses, stay away from statements about cause and effect, and don’t use the words correlate or regression (in any form) in your research question.\n\n\n\n\n5.12.2 Research Question for Analysis 2\nHere you will propose your Research Question for Analysis 2 and provide some motivation for your variable choices associated with that analysis. All of the tips for Analysis 1 apply in this case, too.\n\nPlease remember that a research question for this course should end in a question mark.\nAgain, after listing your question, it is completely appropriate for you to provide some brief speculation as to the nature of the relationship you anticipate finding based on your hypotheses about the variables you plan to study.\nAn example of a dull but moderately effective and minimally appropriate research question for Analysis 2 might be:\n\nAre there meaningful differences in the mean of [outcome] for counties with high and low levels of [predictor]?\nAgain, you should be able to do a bit better than that.\n\n\n5.12.3 Research Question for Analysis 3\nHere you will propose your Research Question for Analysis 3, and provide some motivation for your variable choices associated with that analysis. All of the tips for Analysis 1 apply in this case, too.\n\nPlease remember that a research question for this course should end in a question mark.\nAgain, after listing your question, it is completely appropriate for you to provide some brief speculation as to the nature of the relationship you anticipate finding based on your hypotheses about the variables you plan to study.\nAn example of a dull but moderately effective and minimally appropriate research question for Analysis 3 might be:\n\nAre there meaningful differences in the mean of [outcome] for counties in 2024 as compared to 2019?\nAgain, you should be able to do a bit better than that."
+  },
+  {
+    "objectID": "plan.html#section-13.-reflection",
+    "href": "plan.html#section-13.-reflection",
+    "title": "Project A Plan",
+    "section": "5.13 Section 13. Reflection",
+    "text": "5.13 Section 13. Reflection\nHere you will provide a paragraph describing the most challenging (or difficult) part of completing the work so far, and how you were able to overcome whatever it was that was most challenging.\nYour discussion of the biggest challenge includes a paragraph (or more) written in English, with attention paid to grammar, syntax and spelling. It needs to be clear to us from reading your reflection what your biggest issue was, and how you tried to address it."
+  },
+  {
+    "objectID": "plan.html#section-14.-session-information",
+    "href": "plan.html#section-14.-session-information",
+    "title": "Project A Plan",
+    "section": "5.14 Section 14. Session Information",
+    "text": "5.14 Section 14. Session Information\nAs we have required in our Labs, there must be a Session Information section at the end of the document. This should indicate that R version 4.3.1. or later is used.\nWe’d like you to use the xfun package’s version of session_info()."
+  }
+]
