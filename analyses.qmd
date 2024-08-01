@@ -12,12 +12,12 @@ knitr::opts_chunk$set(comment = NA)
 
 Using the tibble you've developed following the instructions on the [Data](data.qmd) and [Plan](plan.qmd) pages, you will perform three analyses, as specified below. Your final portfolio report will include:
 
-- Sections 1-12 from the [Plan](plan.qmd), edited as necessary.
+- Sections 1-12 from the [Plan](plan.qmd), edited as necessary (note that you'll drop Section 13 from the Plan and move section 14 in the Plan to a new Section 17 in the Portfolio Report.
 - Section 13 will be your Analysis 1, and will have four subsections.
 - Section 14 will be your Analysis 2, with four subsections.
 - Section 15 will be your Analysis 3, with four subsections.
 - Section 16 will be a new Reflections section, discussed in the [Portfolio](portfolio.qmd) materials.
-- Section 17 will be your new location for session information.
+- Section 17 will be your new location for session information, as mentioned previously.
 
 The four subsections for each Analysis are to be labeled:
 
@@ -78,7 +78,7 @@ Fit your model to use your predictor to predict your outcome (applying your sele
 
 1. A written statement of the full prediction equation, with coefficients nicely rounded, and a careful description of what the coefficients mean in context. If you're using a transformation of the outcome or the predictor, be sure this is reflected in your comments here.
 
-2. A tidy summary of the model's coefficients, including 90% confidence interval for model estimates.
+2. A tidy summary of the model's coefficients, including 90% confidence intervals for model estimates.
 
 3. The model's R-squared, residual standard error (sigma), and the number of observations to which the model was fit.
 
