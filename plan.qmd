@@ -202,14 +202,14 @@ Here is a sample variable description table with just some of the variables - yo
 
 Variable | Role | Old Name | Description | Year(s)
 :--------: | :----: | :--------: | :-----------: | :------:
-`fipscode` | ID | `fipscode` | FIPS code | --
-`state` | ID | `state` | State Abbreviation (list your states here) | --
-`county` | ID | `county` | County Name | --
-`poor_fair_health` | A1-out | `v002` | Percentage of adults reporting fair or poor health (age-adjusted). | 2021
-`adult_obesity` | A1-pre | `v011` | Percentage of the adult population (age 18 and older) that reports a body mass index (BMI) greater than or equal to 30 kg/m2 (age-adjusted). | 2021
-`adult_smoking` | A2-out | `v009` | Percentage of adults who are current smokers (age-adjusted). | 2021
-`income_ineq_cat` | A2-pre | from `v044` | Low: $\leq$ 4.25, High: $\geq$ 4.60. | 2018-22
-`income_inequality` | -- | `v044` | Ratio of household income at the 80th percentile to income at the 20th percentile. | 2018-22
+**fipscode** | ID | `fipscode` | FIPS code | --
+**state** | ID | `state` | State Abbreviation (list your states here) | --
+**county** | ID | `county` | County Name | --
+**poor_fair_health** | A1-out | `v002` | Percentage of adults reporting fair or poor health (age-adjusted). | 2021
+**adult_obesity** | A1-pre | `v011` | Percentage of the adult population (age 18 and older) that reports a body mass index (BMI) greater than or equal to 30 kg/m2 (age-adjusted). | 2021
+**adult_smoking** | A2-out | `v009` | Percentage of adults who are current smokers (age-adjusted). | 2021
+**income_ineq_cat** | A2-pre | from `v044` | Low: $\leq$ 4.25, High: $\geq$ 4.60. | 2018-22
+**income_inequality** | -- | `v044` | Ratio of household income at the 80th percentile to income at the 20th percentile. | 2018-22
 
 and so on.
 

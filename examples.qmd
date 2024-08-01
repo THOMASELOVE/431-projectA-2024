@@ -11,12 +11,12 @@ knitr::opts_chunk$set(comment = NA)
 # Project A Plan Materials
 
 1. The **Project A Plan template**, is available as part of [the 431-data site](https://github.com/THOMASELOVE/431-data). It is called `431-projectA-plan-template.qmd`. 
-    - An [HTML version is also available to view at RPubs](https://rpubs.com/TELOVE/projectA-proposal-template).
+    - An [HTML version is also available to view at RPubs](https://rpubs.com/TELOVE/ProjectA-plan-template-431-2024).
 
 # Project A Portfolio Report Materials
 
 2. The **Project A Portfolio Report template** is also available as part of [the 431-data site](https://github.com/THOMASELOVE/431-data). It is called `431-projectA-portfolio-report-template.qmd`. 
-    - An [HTML version is also available to view at RPubs](https://rpubs.com/TELOVE/projectA-report-template).
+    - An [HTML version is also available to view at RPubs](https://rpubs.com/TELOVE/ProjectA-portfolio-report-template-431-2024).
 
 :::{.callout-note}
 
