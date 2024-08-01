@@ -1,7 +1,7 @@
 ---
 title: "Project A Data"
 author: "Thomas E. Love, Ph.D."
-date: last-modified
+date-modified: last-modified
 ---
 
 ```{r setup, include=FALSE}
@@ -15,7 +15,7 @@ Before starting your Data work, it's a **really** good idea to read through:
 
 - this entire Data page
 - the entire Project A [Plan page](plan.qmd), and
-- the [Examples material](examples.qmd) related to the Project A Plan, including the Project A Plan template and the sample Plan.
+- the [Examples material](examples.qmd) related to the Project A Plan, specifically the Project A Plan template.
 
 Trust us. You'll save **a lot** of time and energy if you do so.
 

@@ -1,7 +1,7 @@
 ---
 title: "Project A Plan"
 author: "Thomas E. Love, Ph.D."
-date: last-modified
+date-modified: last-modified
 ---
 
 ```{r setup, include=FALSE}
@@ -149,7 +149,7 @@ Look over these results to be sure that:
 - you have no more than 20% missing values in either of your Analysis 1 variables, your Analysis 2 outcome and also your Analysis 3 outcome (in each year)
 - and that your data are missing only where they are supposed to be missing. 
     - Specifically, you have no missing data at all in your identifying variables (`fipscode`, `state`, `county`) nor in your `county_clustered` variable.
-    - Your binary factor should definitely have sizeable missing values, of course, since that's how you created it.
+    - Your binary factor should definitely have about 20% missing values, of course, since that's how you created it.
 
 Include a sentence verifying that all of these checks are true.
 

@@ -1,7 +1,7 @@
 ---
 title: "431 Project A Instructions"
 author: "Thomas E. Love, Ph.D."
-date: last-modified
+date-modified: last-modified
 ---
 
 ```{r setup, include=FALSE}

@@ -1,7 +1,7 @@
 ---
 title: "Project A Portfolio"
 author: "Thomas E. Love, Ph.D."
-date: last-modified
+date-modified: last-modified
 ---
 
 ```{r setup, include=FALSE}
@@ -67,6 +67,14 @@ Section 17 was completed as part of the Project A Plan, although there it was Se
 
 So, if you've completed (and edited) your Project A [Plan](plan.qmd), and completed your [analyses](analyses.qmd) sections, then the only new piece of the Portfolio Report is the new "reflections" section.
 
+## The Template
+
+The Template for the Portfolio Report available on our [Examples](examples.qmd) page is identical to the Template you used for the Project A Plan except that it:
+
+- deletes the old section 13, and 
+- adds in headings for the new sections 13-16, while 
+- moving the session information from section 14 to section 17.
+
 # Section 16. Reflections
 
 Write a paragraph (containing at least four well-constructed complete English sentences) to answer the following question:
@@ -77,16 +85,16 @@ What was the most important thing you learned as a result of doing this project,
 
 Before submitting your final report, check these things. Your work will receive a better grade if these things are done correctly.
 
-1. There is a meaningful title (of no more than 80 characters, perhaps augmented by a subtitle), set of authors (with full names) and date (in the format 2024-10-30) at the top of your HTML document. Use CHR-2024 as an abbreviation for "County Health Rankings, 2024" throughout your work.
+1. There is a meaningful title (of no more than 80 characters, perhaps augmented by a subtitle), set of authors (with full names) and date (in the format 2024-10-30) at the top of your HTML document. Use CHR 2024 as an abbreviation for "County Health Rankings, 2024" throughout your work.
 2. You have used the section and subsection headings included in the Portfolio template.
 3. Neither `#| include: FALSE` nor `#| eval: FALSE` is used in the project.
 4. The option `knitr::opts_chunk$set(comment = NA)` is set as part of your package loading, to ensure that R results in the HTML are not preceded with ##.
-5. Either the option `theme_bw()` or `theme_light()` is used as part of your package loading, to ensure that your ggplot-based graphs are easy to view.
+5. Either the option `theme_bw()` or `theme_lucid()` is used as part of your package loading, to ensure that your ggplot-based graphs are easy to view.
 6. All packages are loaded near the top of the document (as opposed to partway through) and `#| message: FALSE` is used to suppress the messages created when loading packages.
 7. The project uses `read_csv()` to read in the data, and `show_col_types = FALSE` is used to suppress the message about column specifications there.
 8. You have run spell check on your Quarto file (by hitting F7) before rendering it. You'll also want to check the headings and subheadings in your HTML to ensure there are no misspellings there.
 9. The raw data (prior to filtering rows and selecting variables) is not printed or summarized or listed in your HTML.
-10. The final tibble is saved to an Rds file before the Analyses and that file to which it is saved contains only letters and numbers and in particular no spaces in its name. Note that you will submit the .Rds file to Canvas with your final portfolio report.
+10. The final tibble is saved to an `.Rds` file before the Analyses and that file to which it is saved contains only letters and numbers and in particular no spaces in its name. Note that you will submit the `.Rds` file to Canvas with your final portfolio report.
 11. There are no avoidable scrolling windows in the HTML document. Avoidable scrolling windows are those fixed by hitting ENTER more often in writing R code.
 12. The project demonstrates that all five variables of interest have been cleaned in accordance with the instructions specified in Table B of the [Data page](data.qmd).
 13. The session information is printed, in a section of its own (Section 17) that appears in the Table of Contents and is the last part of the document.
