@@ -166,7 +166,6 @@ chr_2024 |>
 
 Be sure to check this output to see that:
 
-- you have a distinct `fipscode` for every row in your tibble
 - you have a distinct `fipscode` for every row in your tibble, and
 - you have at least 15 unique values for each outcome and for the quantitative predictors in your analyses.
 
