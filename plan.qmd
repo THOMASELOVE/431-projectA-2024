@@ -161,15 +161,17 @@ Fourth and finally, provide counts of distinct values for each of your variables
 #| eval: false
 
 chr_2024 |> 
-  summarise(across(everything(), ~ n_distinct(.)))
+  summarise(across(everything(), ~ n_distinct(.))) |>
+  knitr::kable()
 ```
 
 Be sure to check this output to see that:
 
 - you have a distinct `fipscode` for every row in your tibble, and
-- you have at least 15 unique values for each outcome and for the quantitative predictors in your analyses.
+- you have at least 15 unique values for each outcome and for the quantitative predictors in your analyses,
+- we can see all of the results in your HTML output.
 
-Include a sentence verifying that all of these checks are true.
+Include a sentence verifying that these checks are true.
 
 ## Section 11. The Codebook
 

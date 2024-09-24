@@ -262,7 +262,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2024-09-20</p>
+      <p class="date-modified">2024-09-23</p>
     </div>
   </div>
     
@@ -448,14 +448,16 @@ Note
 <p>Fourth and finally, provide counts of distinct values for each of your variables. The following code should be helpful:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>chr_2024 <span class="sc">|&gt;</span> </span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="fu">across</span>(<span class="fu">everything</span>(), <span class="sc">~</span> <span class="fu">n_distinct</span>(.)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="fu">across</span>(<span class="fu">everything</span>(), <span class="sc">~</span> <span class="fu">n_distinct</span>(.))) <span class="sc">|&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Be sure to check this output to see that:</p>
 <ul>
 <li>you have a distinct <code>fipscode</code> for every row in your tibble, and</li>
-<li>you have at least 15 unique values for each outcome and for the quantitative predictors in your analyses.</li>
+<li>you have at least 15 unique values for each outcome and for the quantitative predictors in your analyses,</li>
+<li>we can see all of the results in your HTML output.</li>
 </ul>
-<p>Include a sentence verifying that all of these checks are true.</p>
+<p>Include a sentence verifying that these checks are true.</p>
 </section>
 </section>
 <section id="section-11.-the-codebook" class="level2" data-number="5.11">
