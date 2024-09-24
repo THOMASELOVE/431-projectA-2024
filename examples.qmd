@@ -15,6 +15,8 @@ knitr::opts_chunk$set(comment = NA)
     
 2. A [sample Project A Plan](https://rpubs.com/TELOVE/ProjectA-sample-plan-431-2024), built by Dr. Love to help people who need to make revisions to their Plan after the initial version [is available now](https://rpubs.com/TELOVE/ProjectA-sample-plan-431-2024). 
 
+3. A list of the [17 elements we will review](https://github.com/THOMASELOVE/431-classes-2024/blob/main/projectA/plan_checklist.md) closely in deciding whether or not to accept your Project A Plan [is provided here](https://github.com/THOMASELOVE/431-classes-2024/blob/main/projectA/plan_checklist.md).
+
 # Project A Portfolio Report Materials
 
 3. The **Project A Portfolio Report template** is also available as part of [the 431-data site](https://github.com/THOMASELOVE/431-data). It is called `431-projectA-portfolio-report-template.qmd`. 
